@@ -50,6 +50,7 @@
  *********************************************************************************************************************/
 
 #include "Dio.h"
+#include "Adc.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -122,7 +123,9 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_
  * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
  * Symbol: CtLedTask_InitRunnable
  *********************************************************************************************************************/
-
+static uint16 Adc0AppBuffer[2];
+  Adc_EnableGroupNotification(AdcGroup1);
+Adc_SetupResultBuffer(AdcGroup1,Adc0AppBuffer);
 Rte_Call_UR_CN_CAN00_06ecbb07_RequestComMode(COMM_FULL_COMMUNICATION);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -164,7 +167,7 @@ LedCnt++;
 LedState ^= 0x01;
 
 
-
+Adc_StartGroupConversion(AdcGroup1);
  Dio_WriteChannel(112,LedState);
 
 /**********************************************************************************************************************
@@ -172,6 +175,10 @@ LedState ^= 0x01;
  *********************************************************************************************************************/
 }
 
+void AdcGroup1_ConvertCompleteNotification(void){
+  static uint16 ResVal[2]={0};
+  Adc_ReadGroup(AdcGroup1,ResVal);
+}
 
 #define CtLedTask_STOP_SEC_CODE
 #include "CtLedTask_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */

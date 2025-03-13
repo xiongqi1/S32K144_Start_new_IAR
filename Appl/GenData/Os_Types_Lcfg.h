@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2021-06-06 16:46:36
+ *   Generation Time: 2025-03-13 21:11:37
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -65,6 +65,7 @@
 #define OsTask_BSW_SCHM OsTask_BSW_SCHM
 
 /* Category 2 ISR identifiers. */
+#define ADC0_Isr ADC0_Isr
 #define CanIsr_0_BusOff CanIsr_0_BusOff
 #define CanIsr_0_MB00To15 CanIsr_0_MB00To15
 #define CanIsr_0_MB16To31 CanIsr_0_MB16To31
@@ -143,11 +144,12 @@ typedef enum
 /*! Category 2 ISR identifiers. */
 typedef enum
 {
-  CanIsr_0_BusOff = 0,
-  CanIsr_0_MB00To15 = 1,
-  CanIsr_0_MB16To31 = 2,
-  CounterIsr_SystemTimer = 3,
-  OS_ISRID_COUNT = 4,
+  ADC0_Isr = 0,
+  CanIsr_0_BusOff = 1,
+  CanIsr_0_MB00To15 = 2,
+  CanIsr_0_MB16To31 = 3,
+  CounterIsr_SystemTimer = 4,
+  OS_ISRID_COUNT = 5,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 

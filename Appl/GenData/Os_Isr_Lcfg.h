@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.h
- *   Generation Time: 2021-04-09 15:46:07
+ *   Generation Time: 2025-03-13 21:11:36
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -72,6 +72,9 @@
 
 # define OS_START_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+/*! ISR configuration data: ADC0_Isr */
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_ADC0_Isr;
 
 /*! ISR configuration data: CanIsr_0_BusOff */
 extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_CanIsr_0_BusOff;
