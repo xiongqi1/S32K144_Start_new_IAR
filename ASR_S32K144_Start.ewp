@@ -385,8 +385,10 @@
                     <state>$PROJ_DIR$\MCAL\Gpt_TS_T40D2M10I1R0\include</state>
                     <state>$PROJ_DIR$\MCAL\Icu_TS_T40D2M10I1R0\include</state>
                     <state>$PROJ_DIR$\MCAL\Mcu_TS_T40D2M10I1R0\include</state>
+                    <state>$PROJ_DIR$\MCAL\Mcl_TS_T40D2M10I1R0\include</state>
                     <state>$PROJ_DIR$\MCAL\Ocu_TS_T40D2M10I1R0\include</state>
                     <state>$PROJ_DIR$\MCAL\Port_TS_T40D2M10I1R0\include</state>
+                    <state>$PROJ_DIR$\MCAL\Pwm_TS_T40D2M10I1R0\include</state>
                     <state>$PROJ_DIR$\MCAL\Spi_TS_T40D2M10I1R0\include</state>
                     <state>$PROJ_DIR$\MCAL\Wdg_TS_T40D2M10I1R0\include</state>
                     <state>$PROJ_DIR$\Appl\GenData</state>
@@ -2244,6 +2246,9 @@
                     <name>$PROJ_DIR$\Appl\GenData\src\Port_PBcfg.c</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\Appl\GenData\src\Pwm_PBcfg.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\Appl\GenData\src\Spi_Cfg.c</name>
                 </file>
                 <file>
@@ -2927,6 +2932,12 @@
             </file>
         </group>
         <group>
+            <name>MCL</name>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Mcl_TS_T40D2M10I1R0\src\Ftm_Common.c</name>
+            </file>
+        </group>
+        <group>
             <name>MCU</name>
             <file>
                 <name>$PROJ_DIR$\MCAL\Mcu_TS_T40D2M10I1R0\src\Mcu.c</name>
@@ -2978,6 +2989,18 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\MCAL\Port_TS_T40D2M10I1R0\src\Port_Port_Ci.c</name>
+            </file>
+        </group>
+        <group>
+            <name>PWM</name>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Pwm_TS_T40D2M10I1R0\src\Pwm.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Pwm_TS_T40D2M10I1R0\src\Pwm_Ftm.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Pwm_TS_T40D2M10I1R0\src\Pwm_Ipw.c</name>
             </file>
         </group>
         <group>

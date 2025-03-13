@@ -50,6 +50,7 @@
  *********************************************************************************************************************/
 
 #include "Dio.h"
+#include "Pwm.h"
 #include "Adc.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
@@ -178,6 +179,8 @@ Adc_StartGroupConversion(AdcGroup1);
 void AdcGroup1_ConvertCompleteNotification(void){
   static uint16 ResVal[2]={0};
   Adc_ReadGroup(AdcGroup1,ResVal);
+  Pwm_SetDutyCycle(PwmChannel_1,ResVal[0]*8);
+  Pwm_OutputStateType PwmOutState=Pwm_GetOutputState(PwmChannel_1);
 }
 
 #define CtLedTask_STOP_SEC_CODE
