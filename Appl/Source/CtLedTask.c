@@ -128,6 +128,7 @@ static uint16 Adc0AppBuffer[2];
   Adc_EnableGroupNotification(AdcGroup1);
 Adc_SetupResultBuffer(AdcGroup1,Adc0AppBuffer);
 Rte_Call_UR_CN_CAN00_06ecbb07_RequestComMode(COMM_FULL_COMMUNICATION);
+Pwm_SetPeriodAndDuty(PwmChannel_1,1000,0x5000);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -179,7 +180,7 @@ Adc_StartGroupConversion(AdcGroup1);
 void AdcGroup1_ConvertCompleteNotification(void){
   static uint16 ResVal[2]={0};
   Adc_ReadGroup(AdcGroup1,ResVal);
-  Pwm_SetDutyCycle(PwmChannel_1,ResVal[0]*8);
+  //Pwm_SetDutyCycle(PwmChannel_1,ResVal[0]*8);
   Pwm_OutputStateType PwmOutState=Pwm_GetOutputState(PwmChannel_1);
 }
 

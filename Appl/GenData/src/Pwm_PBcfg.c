@@ -232,8 +232,8 @@ static CONST(Pwm_Ftm_ChannelConfigType, PWM_CONST) Pwm_Ftm_ChannelConfig_PB[PWM_
         /** @brief Default phase shift value */
         ((uint16)0),
 #endif
-        /** @brief Edge alignment for the current channel  */    
-        PWM_EDGE_ALIGNED
+        /** @brief Edge alignment for the current channel  */
+        PWM_CENTER_ALIGNED
     }
    
 };
@@ -250,11 +250,11 @@ static CONST(Pwm_Ftm_ModuleConfigType, PWM_CONST) Pwm_Ftm_ModuleConfig_PB[PWM_FT
         (FTM_CONF_BDMMODE_ALLSTOP_U32 | ((uint32) 0U) | ((uint32) 0)),
       
         /** @brief FTM_0_SC register */
-        (FTM_SC_CLKS_SYS_CLOCK_U32 | FTM_SC_PS_DIV1_U32 |  ((uint32)1U << (FTM_SC_PWMOUTPUTEN_SHIFT + (uint32)2U ))| ((uint32)0)),
+        (FTM_SC_CPWMS_UP_DOWN_COUNTING_U32 | FTM_SC_CLKS_SYS_CLOCK_U32 | FTM_SC_PS_DIV1_U32 |  ((uint32)1U << (FTM_SC_PWMOUTPUTEN_SHIFT + (uint32)2U ))| ((uint32)0)),
 
         
         /** @brief FTM_0_SYNC register */
-        (uint8) (FTM_SYNC_CNTMIN_ENABLE_U32 | ((uint32) 0)),
+        (uint8) ((FTM_SYNC_CNTMAX_ENABLE_U32 << FTM_SYNC_CNTMAX_SHIFT) | ((uint32) 0)),
          
         /** @brief FTM_0_MODE register used to enable other features of the FTM */
         (FTM_MODE_INIT_ENABLE_U32 | FTM_MODE_FTMEN_ENABLE_U32 | FTM_MODE_WPDIS_DISABLE_U32 | ((uint32)0)),    
@@ -268,8 +268,8 @@ static CONST(Pwm_Ftm_ModuleConfigType, PWM_CONST) Pwm_Ftm_ModuleConfig_PB[PWM_FT
          /** @brief Id of the referenced FTM module: FTM_0 */
         PWM_FTM_0,
         
-        /** @brief Default period value: , freq = 6.4E10 Hz: FTM_0_MOD register*/
-        ((Pwm_PeriodType) 0)
+        /** @brief Default period value: , freq = 1000.0 Hz: FTM_0_MOD register*/
+        ((Pwm_PeriodType) 8000)
             
 #if (PWM_FAULT_SUPPORTED == STD_ON)
         ,
@@ -312,7 +312,7 @@ static CONST(Pwm_ChannelConfigType, PWM_CONST) Pwm_Channels_PB[PWM_CONF_CHANNELS
    /** @brief PwmChannel_1 */
     {
         /** @brief Channel class: Variable/Fixed/Fixed_Shifted period */
-        PWM_FIXED_PERIOD
+        PWM_VARIABLE_PERIOD
         
 #if (PWM_NOTIFICATION_SUPPORTED == STD_ON)
         ,
