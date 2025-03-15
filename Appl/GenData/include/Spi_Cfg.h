@@ -167,8 +167,29 @@ extern "C"{
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SpiConf_SpiChannel_SpiChannel_SBC_Read    ((Spi_ChannelType)0)
-#define SPI_MAX_CHANNEL  (1u)
+#define SpiConf_SpiChannel_SpiChannel_test0    ((Spi_ChannelType)0)
+
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiChannel_SpiChannel_test1    ((Spi_ChannelType)1)
+
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiChannel_SpiChannel_test2    ((Spi_ChannelType)2)
+
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiChannel_SpiChannel_test3    ((Spi_ChannelType)3)
+#define SPI_MAX_CHANNEL  (4u)
 
 /**
 * @brief Total number of Jobs configured.
@@ -181,7 +202,25 @@ extern "C"{
 * external identifiers.
 */
 #define SpiConf_SpiJob_SpiJob_0   ((Spi_JobType)0)
-#define SPI_MAX_JOB     (1u)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiJob_SpiJob_1   ((Spi_JobType)1)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiJob_SpiJob_2   ((Spi_JobType)2)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiJob_SpiJob_3   ((Spi_JobType)3)
+#define SPI_MAX_JOB     (4u)
 
 /**
 * @brief Total number of Sequences configured.
@@ -193,8 +232,14 @@ extern "C"{
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SpiConf_SpiSequence_SpiSequence_0_SBC   ((Spi_SequenceType)0)
-#define SPI_MAX_SEQUENCE  (1u)
+#define SpiConf_SpiSequence_SpiSequence_0   ((Spi_SequenceType)0)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiSequence_SpiSequence_1   ((Spi_SequenceType)1)
+#define SPI_MAX_SEQUENCE  (2u)
 
 
 /**
@@ -237,7 +282,25 @@ extern "C"{
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SPI_SpiExternalDevice_SBC  ((Spi_ExternalDeviceType)0u)
+#define SPI_SpiExternalDevice_PCS3  ((Spi_ExternalDeviceType)0u)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SPI_SpiExternalDevice_PCS0  ((Spi_ExternalDeviceType)1u)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SPI_SpiExternalDevice_PCS1  ((Spi_ExternalDeviceType)2u)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SPI_SpiExternalDevice_PCS2  ((Spi_ExternalDeviceType)3u)
 
 
 /**
