@@ -674,6 +674,16 @@ extern "C" {
 #define PortConfigSet_PortContainer_SBC_SPI_PortPin_PTA6_PCS1  12
 /** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
 #define PortConfigSet_PortContainer_SBC_SPI_PortPin_PTA16_PCS2  13
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_PortContainer_LPSPI0_PortPin_PTB3_MISO  14
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_PortContainer_LPSPI0_PortPin_PTB4_MOSI  15
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_PortContainer_LPSPI0_PortPin_PTB2_SCK  16
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_PortContainer_LPSPI0_PortPin_PTB0_PCS0  17
+/** @violates @ref PORT_CFG_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define PortConfigSet_PortContainer_LPSPI0_PortPin_PTB5_PCS1  18
 
 
 /**
@@ -694,12 +704,12 @@ extern "C" {
 /**
 * @brief The maximum number of configured pins
 */
-#define PORT_MAX_CONFIGURED_PADS_U16                        ((uint16)14)
+#define PORT_MAX_CONFIGURED_PADS_U16                        ((uint16)19)
 
 /**
  * @brief Number of UnUsed pin array
 */
-#define PORT_MAX_UNUSED_PADS_U16   (75U)
+#define PORT_MAX_UNUSED_PADS_U16   (70U)
 
 /**
 * @brief Port driver Post-build configuration switch

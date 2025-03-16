@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>3685425476</Checksum>
+        <Checksum>692050211</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -158,7 +158,14 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Count>0</Count>
+        <Bp0>_ 0 "EMUL_CODE" "{$PROJ_DIR$\MCAL\Spi_TS_T40D2M10I1R0\src\Spi.c}.1475.13" 0 0 1 "" 0 "" 0</Bp0>
+        <Bp1>_ 0 "EMUL_CODE" "{$PROJ_DIR$\MCAL\Spi_TS_T40D2M10I1R0\src\Spi.c}.532.13" 0 0 1 "" 0 "" 0</Bp1>
+        <Bp2>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Appl\Source\CddSbc.c}.149.1" 0 0 1 "" 0 "" 0</Bp2>
+        <Bp3>_ 0 "EMUL_CODE" "{$PROJ_DIR$\MCAL\Spi_TS_T40D2M10I1R0\src\Spi_LPspi.c}.2578.13" 0 0 1 "" 0 "" 0</Bp3>
+        <Bp4>_ 0 "EMUL_CODE" "{$PROJ_DIR$\MCAL\Spi_TS_T40D2M10I1R0\src\Spi_LPspi.c}.2589.29" 0 0 1 "" 0 "" 0</Bp4>
+        <Bp5>_ 0 "EMUL_CODE" "{$PROJ_DIR$\MCAL\Spi_TS_T40D2M10I1R0\src\Spi_LPspi.c}.2671.9" 0 0 1 "" 0 "" 0</Bp5>
+        <Bp6>_ 0 "EMUL_CODE" "{$PROJ_DIR$\MCAL\Spi_TS_T40D2M10I1R0\src\Spi_LPspi.c}.2740.13" 0 0 1 "" 0 "" 0</Bp6>
+        <Count>7</Count>
     </Breakpoints2>
     <Aliases>
         <A0>_ "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\BrsAsrMain.c" ""</A0>

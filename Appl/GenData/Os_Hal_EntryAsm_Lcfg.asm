@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_EntryAsm_Lcfg.asm
- *   Generation Time: 2025-03-13 21:11:35
+ *   Generation Time: 2025-03-16 02:12:47
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -45,6 +45,7 @@
 
   /* Export of the ISR wrappers on OsCore0 */
   OS_HAL_ASM_EXPORT(Os_Isr_Core0_Interrupt_15)
+  OS_HAL_ASM_EXPORT(Os_Isr_Core0_Interrupt_42)
   OS_HAL_ASM_EXPORT(Os_Isr_Core0_Interrupt_55)
   OS_HAL_ASM_EXPORT(Os_Isr_Core0_Interrupt_94)
   OS_HAL_ASM_EXPORT(Os_Isr_Core0_Interrupt_97)
@@ -57,6 +58,12 @@
 OS_HAL_ASM_FUNCTION_BEGIN(Os_Isr_Core0_Interrupt_15)
   Os_Hal_Cat2Entry_Interrupt OsCfg_Isr_CounterIsr_SystemTimer  
   OS_HAL_ASM_FUNCTION_END(Os_Isr_Core0_Interrupt_15)
+    
+  OS_HAL_ASM_IMPORT(OsCfg_Isr_SPI0_Isr)
+  OS_HAL_ASM_THUMB_FUNCTION
+OS_HAL_ASM_FUNCTION_BEGIN(Os_Isr_Core0_Interrupt_42)
+  Os_Hal_Cat2Entry_Interrupt OsCfg_Isr_SPI0_Isr  
+  OS_HAL_ASM_FUNCTION_END(Os_Isr_Core0_Interrupt_42)
     
   OS_HAL_ASM_IMPORT(OsCfg_Isr_ADC0_Isr)
   OS_HAL_ASM_THUMB_FUNCTION

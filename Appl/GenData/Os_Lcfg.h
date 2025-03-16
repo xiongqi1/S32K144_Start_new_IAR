@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2025-03-13 21:11:36
+ *   Generation Time: 2025-03-16 02:12:47
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -145,6 +145,18 @@ extern FUNC(void, OS_CANBUSOFFISR_0_CODE) Os_Isr_CanBusOffIsr_0(void);
 extern FUNC(void, OS_CANMAILBOXISR_0_CODE) Os_Isr_CanMailboxIsr_0(void);
 
 # define OS_STOP_SEC_CanMailboxIsr_0_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+
+# define OS_START_SEC_Spi_LPspi_IsrTDF_LPSPI_0_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+/**********************************************************************************************************************
+ *  Spi_LPspi_IsrTDF_LPSPI_0()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_SPI_LPSPI_ISRTDF_LPSPI_0_CODE) Os_Isr_Spi_LPspi_IsrTDF_LPSPI_0(void);
+
+# define OS_STOP_SEC_Spi_LPspi_IsrTDF_LPSPI_0_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 
 

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Entry_Lcfg.c
- *   Generation Time: 2025-03-13 21:11:35
+ *   Generation Time: 2025-03-16 02:12:47
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -96,6 +96,7 @@
 
 /* Extern declarations of the ISR wrappers. */
 extern void Os_Isr_Core0_Interrupt_15(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
+extern void Os_Isr_Core0_Interrupt_42(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
 extern void Os_Isr_Core0_Interrupt_55(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
 extern void Os_Isr_Core0_Interrupt_94(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
 extern void Os_Isr_Core0_Interrupt_97(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
@@ -161,7 +162,7 @@ OS_HAL_CONST_ATTRIBUTE_DEFINITION
   Os_Hal_UnhandledIRQ, /* External interrupt: 39 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 40 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 41 */
-  Os_Hal_UnhandledIRQ, /* External interrupt: 42 */
+  Os_Isr_Core0_Interrupt_42, /* External interrupt: 42 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 43 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 44 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 45 */

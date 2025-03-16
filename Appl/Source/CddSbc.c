@@ -70,6 +70,8 @@ FUNC(void, CddSbc_CODE) Sbc_Test_Runnable(void) /* PRQA S 0850 */ /* MD_MSR_19.8
  * Symbol: Sbc_Test_Runnable
  *********************************************************************************************************************/
 
+ Spi_SetAsyncMode(SPI_INTERRUPT_MODE);
+
 Spi_DataBufferType readSbcCmd[4];
 static Spi_DataBufferType sbcReadData[4];
 readSbcCmd[0]= 0x50;
@@ -104,19 +106,46 @@ Spi_DataBufferType SpiCHCmdTest3[4];
 static Spi_DataBufferType SpiCHReadDataTest3[4];
 SpiCHCmdTest3[0]= 0x53;
 SpiCHCmdTest3[1] = 0xF3;
-result =Spi_SetupEB(SpiConf_SpiChannel_SpiChannel_test3,SpiCHCmdTest3,SpiCHReadDataTest3,2);
+SpiCHCmdTest3[2] = 0xA3;
+result =Spi_SetupEB(SpiConf_SpiChannel_SpiChannel_test3,SpiCHCmdTest3,SpiCHReadDataTest3,3);
 if(result == E_OK)
 {
     a++;
 }
 
-result = Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence_0);
+Spi_DataBufferType SpiCHCmdTest4[4];
+static Spi_DataBufferType SpiCHReadDataTest4[4];
+SpiCHCmdTest4[0]= 0x54;
+SpiCHCmdTest4[1] = 0xF4;
+result =Spi_SetupEB(SpiConf_SpiChannel_SpiChannel_test4,SpiCHCmdTest4,SpiCHReadDataTest4,2);
 if(result == E_OK)
 {
     a++;
 }
+
+Spi_DataBufferType SpiCHCmdTest5[4];
+static Spi_DataBufferType SpiCHReadDataTest5[4];
+SpiCHCmdTest5[0]= 0x55;
+SpiCHCmdTest5[1] = 0xF5;
+result =Spi_SetupEB(SpiConf_SpiChannel_SpiChannel_test5,SpiCHCmdTest5,SpiCHReadDataTest5,2);
+if(result == E_OK)
+{
+    a++;
+}
+
+/*result = Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence_0);
+if(result == E_OK)
+{
+    a++;
+}*/
 
 result = Spi_SyncTransmit(SpiConf_SpiSequence_SpiSequence_1);
+if(result == E_OK)
+{
+    a++;
+}
+
+result = Spi_AsyncTransmit(SpiConf_SpiSequence_SpiSequence_2);
 if(result == E_OK)
 {
     a++;

@@ -154,7 +154,7 @@ extern "C"{
 * is available and delivered. (see chapter 7.1)
 * @implements SPI_LEVEL_DELIVERED_define
 */
-#define SPI_LEVEL_DELIVERED            (LEVEL0)
+#define SPI_LEVEL_DELIVERED            (LEVEL2)
 
 /**
 * @brief Defines the maximum number of supported channels.
@@ -189,7 +189,21 @@ extern "C"{
 * external identifiers.
 */
 #define SpiConf_SpiChannel_SpiChannel_test3    ((Spi_ChannelType)3)
-#define SPI_MAX_CHANNEL  (4u)
+
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiChannel_SpiChannel_test4    ((Spi_ChannelType)4)
+
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiChannel_SpiChannel_test5    ((Spi_ChannelType)5)
+#define SPI_MAX_CHANNEL  (6u)
 
 /**
 * @brief Total number of Jobs configured.
@@ -201,25 +215,25 @@ extern "C"{
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SpiConf_SpiJob_SpiJob_0   ((Spi_JobType)0)
+#define SpiConf_SpiJob_SpiJob_LPSPI1_0   ((Spi_JobType)0)
 /*
 * @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SpiConf_SpiJob_SpiJob_1   ((Spi_JobType)1)
+#define SpiConf_SpiJob_SpiJob_LPSPI1_1   ((Spi_JobType)1)
 /*
 * @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SpiConf_SpiJob_SpiJob_2   ((Spi_JobType)2)
+#define SpiConf_SpiJob_SpiJob_LPSPI0_0   ((Spi_JobType)2)
 /*
 * @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SpiConf_SpiJob_SpiJob_3   ((Spi_JobType)3)
+#define SpiConf_SpiJob_SpiJob_LPSPI0_1   ((Spi_JobType)3)
 #define SPI_MAX_JOB     (4u)
 
 /**
@@ -239,7 +253,13 @@ extern "C"{
 * external identifiers.
 */
 #define SpiConf_SpiSequence_SpiSequence_1   ((Spi_SequenceType)1)
-#define SPI_MAX_SEQUENCE  (2u)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SpiConf_SpiSequence_SpiSequence_2   ((Spi_SequenceType)2)
+#define SPI_MAX_SEQUENCE  (3u)
 
 
 /**
@@ -247,26 +267,30 @@ extern "C"{
 * @details Defines the peripherals used throughout the configuration(s).
 */
 #define CSIB0  ((uint8)0u)
-#define SPI_MAX_HWUNIT   (1u)
+#define CSIB1  ((uint8)1u)
+#define SPI_MAX_HWUNIT   (2u)
 
 /**
 * @brief Physical HWUnits definition - as from resource manager.
 * @details Physical HWUnits definition - as from resource manager.
 */
 
-#define LPSPI_1_HWUNIT   (CSIB0)
+#define LPSPI_0_HWUNIT   (CSIB0)
+
+#define LPSPI_1_HWUNIT   (CSIB1)
 
 
 /**
 * @brief Physical HWUnits enabled/disabled
 * @details Physical HWUnits enabled/disabled
 */
-#define LPSPI_0_ENABLED  ((STD_OFF))
+#define LPSPI_0_ENABLED  ((STD_ON))
 #define LPSPI_1_ENABLED  ((STD_ON))
 #define LPSPI_2_ENABLED  ((STD_OFF))
 
 #define SPI_SLAVE_SUPPORT  ((STD_OFF))
 
+#define LPSPI_0_OFFSET  0u
 #define LPSPI_1_OFFSET  1u
 
 #define SPI_FIFO_SIZE   ((uint8)4u)
@@ -282,25 +306,37 @@ extern "C"{
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SPI_SpiExternalDevice_PCS3  ((Spi_ExternalDeviceType)0u)
+#define SPI_SpiExternalDevice_LPSPI1_PCS3  ((Spi_ExternalDeviceType)0u)
 /*
 * @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SPI_SpiExternalDevice_PCS0  ((Spi_ExternalDeviceType)1u)
+#define SPI_SpiExternalDevice_LPSPI1_PCS0  ((Spi_ExternalDeviceType)1u)
 /*
 * @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SPI_SpiExternalDevice_PCS1  ((Spi_ExternalDeviceType)2u)
+#define SPI_SpiExternalDevice_LPSPI1_PCS1  ((Spi_ExternalDeviceType)2u)
 /*
 * @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
 * ensure that 31 character signifiance and case sensitivity are supported for
 * external identifiers.
 */
-#define SPI_SpiExternalDevice_PCS2  ((Spi_ExternalDeviceType)3u)
+#define SPI_SpiExternalDevice_LPSPI1_PCS2  ((Spi_ExternalDeviceType)3u)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SPI_SpiExternalDevice_LPSPI0_PCS0  ((Spi_ExternalDeviceType)4u)
+/*
+* @violates @ref Spi_Cfg_h_REF_4 The compiler/linker shall be checked to
+* ensure that 31 character signifiance and case sensitivity are supported for
+* external identifiers.
+*/
+#define SPI_SpiExternalDevice_LPSPI0_PCS1  ((Spi_ExternalDeviceType)5u)
 
 
 /**
@@ -389,7 +425,7 @@ extern "C"{
 *       be defined independently for each HWUnit using Spi_SetHWUnitAsyncMode().
 * @implements SPI_HWUNIT_ASYNC_MODE_define
 */
-#define SPI_HWUNIT_ASYNC_MODE  (STD_OFF)
+#define SPI_HWUNIT_ASYNC_MODE  (STD_ON)
 
 
 /**
@@ -432,6 +468,7 @@ extern "C"{
 /**
 * @brief If enabled, SPI_MAIN_FUNCTION_PERIOD defines the cycle time of the function Spi_MainFunction_Handling in seconds
 */
+#define SPI_MAIN_FUNCTION_PERIOD            (1.0)
 
 
 /*==================================================================================================
