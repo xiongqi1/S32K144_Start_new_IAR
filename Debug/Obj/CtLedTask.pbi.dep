@@ -52,4 +52,22 @@ CtLedTask.pbi: \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Adc_TS_T40D2M10I1R0\include/Adc_Types.h \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\include\Adc_CfgDefines.h \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\Mcal_S32k\Adc_MemMap.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Gpt_TS_T40D2M10I1R0\include\Gpt.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Gpt_TS_T40D2M10I1R0\include/Gpt_Ipw_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Gpt_TS_T40D2M10I1R0\include/Gpt_LPit_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\include\Gpt_Cfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Gpt_TS_T40D2M10I1R0\include/Gpt_EnvCfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Gpt_TS_T40D2M10I1R0\include/Gpt_Lptmr_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Gpt_TS_T40D2M10I1R0\include/Gpt_Ftm_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Mcl_TS_T40D2M10I1R0\include\Ftm_Common_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Mcl_TS_T40D2M10I1R0\include\Reg_eSys_Ftm.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\include\Reg_eSys.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Base_TS_T40D2M10I1R0\include\Soc_Ips.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\Mcal_S32k\Mcl_MemMap.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\MCAL\Gpt_TS_T40D2M10I1R0\include/Gpt_SRtc_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\EcuM\EcuM_Cbk.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\EcuM_Generated_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components\Rte_EcuM_Type.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\EcuM_Cfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\Mcal_S32k\Gpt_MemMap.h \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components\CtLedTask_MemMap.h

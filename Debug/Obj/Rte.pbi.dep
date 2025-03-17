@@ -91,6 +91,8 @@ Rte.pbi: \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/SchM_Dio_Type.h \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/SchM_EcuM.h \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/SchM_EcuM_Type.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/SchM_Gpt.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/SchM_Gpt_Type.h \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/SchM_Mcu.h \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/SchM_Mcu_Type.h \
   F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/SchM_PduR.h \

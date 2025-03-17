@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Compiler_Cfg.h
- *   Generation Time: 2025-03-13 21:11:35
+ *   Generation Time: 2025-03-17 16:46:29
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -40,6 +40,9 @@
 # define OS_CANBUSOFFISR_0_CODE
 # define OS_CANMAILBOXISR_0_CODE
 # define OS_DEFAULT_INIT_TASK_CODE
+# define OS_FTM_0_CH_0_CH_1_ISR_CODE
+# define OS_LPIT_0_CH_0_ISR_CODE
+# define OS_LPTMR_0_CH_0_ISR_CODE
 # define OS_OSTASK_APP_CODE
 # define OS_OSTASK_BSW_SCHM_CODE
 

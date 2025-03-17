@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.h
- *   Generation Time: 2025-03-13 21:11:35
+ *   Generation Time: 2025-03-17 16:46:29
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -89,6 +89,15 @@ extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Leve
 /*! HAL dynamic ISR2 level context data: Level5 */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level5_Dyn;
 
+/*! HAL dynamic ISR2 level context data: Level6 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level6_Dyn;
+
+/*! HAL dynamic ISR2 level context data: Level7 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level7_Dyn;
+
+/*! HAL dynamic ISR2 level context data: Level8 */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_Isr_Level8_Dyn;
+
 /*! HAL dynamic task context data: Default_Init_Task */
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_Default_Init_Task_Dyn;
 
@@ -139,6 +148,15 @@ extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CanIsr_0_MB16
 
 /*! HAL ISR2 context configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_CounterIsr_SystemTimer;
+
+/*! HAL ISR2 context configuration data: FTM_0_CH_0_CH_1_Isr */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_FTM_0_CH_0_CH_1_Isr;
+
+/*! HAL ISR2 context configuration data: LPIT_0_CH_0_Isr */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_LPIT_0_CH_0_Isr;
+
+/*! HAL ISR2 context configuration data: LPTMR_0_CH_0_Isr */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_LPTMR_0_CH_0_Isr;
 
 /*! HAL task context configuration data: Default_Init_Task */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_Default_Init_Task;

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Core_Lcfg.c
- *   Generation Time: 2025-03-13 21:11:35
+ *   Generation Time: 2025-03-17 16:46:29
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -148,6 +148,9 @@ CONSTP2CONST(Os_Hal_IntIsrConfigType, OS_CONST, OS_CONST)
   &OsCfg_Hal_IntIsr_CanIsr_0_BusOff,
   &OsCfg_Hal_IntIsr_CanIsr_0_MB00To15,
   &OsCfg_Hal_IntIsr_CanIsr_0_MB16To31,
+  &OsCfg_Hal_IntIsr_FTM_0_CH_0_CH_1_Isr,
+  &OsCfg_Hal_IntIsr_LPIT_0_CH_0_Isr,
+  &OsCfg_Hal_IntIsr_LPTMR_0_CH_0_Isr,
   NULL_PTR
 };
 

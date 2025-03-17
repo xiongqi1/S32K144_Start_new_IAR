@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_MemMap.h
- *   Generation Time: 2025-03-13 21:11:36
+ *   Generation Time: 2025-03-17 16:46:29
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -231,6 +231,90 @@
 # undef OS_Default_Init_Task_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # pragma default_function_attributes = /* PRQA S 3116 */ /* MD_MSR_1.1 */
 # undef OS_STOP_SEC_Default_Init_Task_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_START_SEC_FTM_0_CH_0_CH_1_ISR_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifdef OS_MEMMAP_SECTION_OPEN
+#  error A MemMap section is already open. Nesting is not supported.
+# endif
+# define OS_MEMMAP_SECTION_OPEN
+# define OS_FTM_0_CH_0_CH_1_ISR_CODE_OPEN
+# ifndef MEMMAP_ERROR
+#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
+# endif
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = @ ".OS_FTM_0_CH_0_CH_1_ISR_CODE" /* PRQA S 0289, 3116 */ /* MD_Os_0289_LinkerSymbol, MD_MSR_1.1 */
+# undef OS_START_SEC_FTM_0_CH_0_CH_1_ISR_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_STOP_SEC_FTM_0_CH_0_CH_1_ISR_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifndef OS_MEMMAP_SECTION_OPEN
+#  error No MemMap section is currently opened.
+# endif
+# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# ifndef OS_FTM_0_CH_0_CH_1_ISR_CODE_OPEN
+#  error Section OS_FTM_0_CH_0_CH_1_ISR_CODE is currently not opened and so cannot be closed.
+# endif
+# undef OS_FTM_0_CH_0_CH_1_ISR_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = /* PRQA S 3116 */ /* MD_MSR_1.1 */
+# undef OS_STOP_SEC_FTM_0_CH_0_CH_1_ISR_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_START_SEC_LPIT_0_CH_0_ISR_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifdef OS_MEMMAP_SECTION_OPEN
+#  error A MemMap section is already open. Nesting is not supported.
+# endif
+# define OS_MEMMAP_SECTION_OPEN
+# define OS_LPIT_0_CH_0_ISR_CODE_OPEN
+# ifndef MEMMAP_ERROR
+#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
+# endif
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = @ ".OS_LPIT_0_CH_0_ISR_CODE" /* PRQA S 0289, 3116 */ /* MD_Os_0289_LinkerSymbol, MD_MSR_1.1 */
+# undef OS_START_SEC_LPIT_0_CH_0_ISR_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_STOP_SEC_LPIT_0_CH_0_ISR_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifndef OS_MEMMAP_SECTION_OPEN
+#  error No MemMap section is currently opened.
+# endif
+# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# ifndef OS_LPIT_0_CH_0_ISR_CODE_OPEN
+#  error Section OS_LPIT_0_CH_0_ISR_CODE is currently not opened and so cannot be closed.
+# endif
+# undef OS_LPIT_0_CH_0_ISR_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = /* PRQA S 3116 */ /* MD_MSR_1.1 */
+# undef OS_STOP_SEC_LPIT_0_CH_0_ISR_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_START_SEC_LPTMR_0_CH_0_ISR_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifdef OS_MEMMAP_SECTION_OPEN
+#  error A MemMap section is already open. Nesting is not supported.
+# endif
+# define OS_MEMMAP_SECTION_OPEN
+# define OS_LPTMR_0_CH_0_ISR_CODE_OPEN
+# ifndef MEMMAP_ERROR
+#  error Each MemMap include may only perform one action. Include MemMap.h separately for each action.
+# endif
+# undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = @ ".OS_LPTMR_0_CH_0_ISR_CODE" /* PRQA S 0289, 3116 */ /* MD_Os_0289_LinkerSymbol, MD_MSR_1.1 */
+# undef OS_START_SEC_LPTMR_0_CH_0_ISR_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
+#endif
+
+#ifdef OS_STOP_SEC_LPTMR_0_CH_0_ISR_CODE /* PRQA S 0883 */ /* MD_Os_0883 */
+# ifndef OS_MEMMAP_SECTION_OPEN
+#  error No MemMap section is currently opened.
+# endif
+# undef OS_MEMMAP_SECTION_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# ifndef OS_LPTMR_0_CH_0_ISR_CODE_OPEN
+#  error Section OS_LPTMR_0_CH_0_ISR_CODE is currently not opened and so cannot be closed.
+# endif
+# undef OS_LPTMR_0_CH_0_ISR_CODE_OPEN /* PRQA S 0841 */ /* MD_MSR_19.6 */
+# pragma default_function_attributes = /* PRQA S 3116 */ /* MD_MSR_1.1 */
+# undef OS_STOP_SEC_LPTMR_0_CH_0_ISR_CODE /* PRQA S 0841 */ /* MD_MSR_19.6 */
 # undef MEMMAP_ERROR /* PRQA S 0841 */ /* MD_MSR_19.6 */
 #endif
 

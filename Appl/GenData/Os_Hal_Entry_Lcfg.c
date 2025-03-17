@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Entry_Lcfg.c
- *   Generation Time: 2025-03-13 21:11:35
+ *   Generation Time: 2025-03-17 16:46:29
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -97,9 +97,12 @@
 /* Extern declarations of the ISR wrappers. */
 extern void Os_Isr_Core0_Interrupt_15(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
 extern void Os_Isr_Core0_Interrupt_55(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
+extern void Os_Isr_Core0_Interrupt_64(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
+extern void Os_Isr_Core0_Interrupt_74(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
 extern void Os_Isr_Core0_Interrupt_94(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
 extern void Os_Isr_Core0_Interrupt_97(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
 extern void Os_Isr_Core0_Interrupt_98(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
+extern void Os_Isr_Core0_Interrupt_115(void); /* PRQA S 3447 */ /* MD_Os_Hal_3447_Loc */
 
 #define OS_STOP_SEC_INTVEC_CORE0_CODE
 #include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
@@ -183,7 +186,7 @@ OS_HAL_CONST_ATTRIBUTE_DEFINITION
   Os_Hal_UnhandledIRQ, /* External interrupt: 61 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 62 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 63 */
-  Os_Hal_UnhandledIRQ, /* External interrupt: 64 */
+  Os_Isr_Core0_Interrupt_64, /* External interrupt: 64 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 65 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 66 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 67 */
@@ -193,7 +196,7 @@ OS_HAL_CONST_ATTRIBUTE_DEFINITION
   Os_Hal_UnhandledIRQ, /* External interrupt: 71 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 72 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 73 */
-  Os_Hal_UnhandledIRQ, /* External interrupt: 74 */
+  Os_Isr_Core0_Interrupt_74, /* External interrupt: 74 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 75 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 76 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 77 */
@@ -234,7 +237,7 @@ OS_HAL_CONST_ATTRIBUTE_DEFINITION
   Os_Hal_UnhandledIRQ, /* External interrupt: 112 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 113 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 114 */
-  Os_Hal_UnhandledIRQ, /* External interrupt: 115 */
+  Os_Isr_Core0_Interrupt_115, /* External interrupt: 115 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 116 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 117 */
   Os_Hal_UnhandledIRQ, /* External interrupt: 118 */

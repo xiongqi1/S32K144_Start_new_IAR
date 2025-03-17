@@ -51,6 +51,7 @@
 
 #include "Dio.h"
 #include "Adc.h"
+#include "Gpt.h"
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of include and declaration area >>          DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
@@ -126,6 +127,12 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_
 static uint16 Adc0AppBuffer[2];
   Adc_EnableGroupNotification(AdcGroup1);
 Adc_SetupResultBuffer(AdcGroup1,Adc0AppBuffer);
+Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration);
+Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration, 20000);
+Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration_LPtmr);
+Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration_LPtmr, 60000);
+Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration_FTM0_CH0_CH1);
+Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration_FTM0_CH0_CH1, 64000);
 Rte_Call_UR_CN_CAN00_06ecbb07_RequestComMode(COMM_FULL_COMMUNICATION);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -178,6 +185,39 @@ Adc_StartGroupConversion(AdcGroup1);
 void AdcGroup1_ConvertCompleteNotification(void){
   static uint16 ResVal[2]={0};
   Adc_ReadGroup(AdcGroup1,ResVal);
+}
+
+void Gpt_1ms(void){
+  static uint16 led_t=0;
+  static unsigned char  LedState=0;
+  led_t++;
+  if(led_t >= 200){
+	LedState ^= 0x01;
+    Dio_WriteChannel(DioConf_DioChannel_DioChannel_PTD0,LedState);
+	led_t=0;
+  }
+}
+
+void Gpt_Lpmtr_5ms(void){
+  static uint16 led_t=0;
+  static unsigned char  LedState=0;
+  led_t++;
+  if(led_t >= 400){
+	LedState ^= 0x01;
+    Dio_WriteChannel(DioConf_DioChannel_DioChannel_PTD1,LedState);
+	led_t=0;
+  }
+}
+
+void Gpt_FTM0_8ms(void){
+  static uint16 led_t=0;
+  static unsigned char  LedState=0;
+  led_t++;
+  if(led_t >= 375){
+	LedState ^= 0x01;
+    Dio_WriteChannel(DioConf_DioChannel_DioChannel_PTD15,LedState);
+	led_t=0;
+  }
 }
 
 #define CtLedTask_STOP_SEC_CODE

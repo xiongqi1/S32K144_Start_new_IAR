@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Cfg.h
- *   Generation Time: 2025-03-13 21:11:35
+ *   Generation Time: 2025-03-17 16:46:29
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -54,7 +54,7 @@
 # define OS_CFG_NUM_BARRIERS                                     (0uL)
 
 /*! Number of ISR2 nesting levels. */
-# define OS_CFG_NUM_ISRLEVELS                                    (5uL)
+# define OS_CFG_NUM_ISRLEVELS                                    (8uL)
 
 /*! Number of all spinlocks. */
 # define OS_CFG_NUM_SYSTEM_SPINLOCKS                             (0uL)

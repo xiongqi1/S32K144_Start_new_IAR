@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Lcfg.h
- *   Generation Time: 2025-03-13 21:11:36
+ *   Generation Time: 2025-03-17 16:46:29
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -145,6 +145,42 @@ extern FUNC(void, OS_CANBUSOFFISR_0_CODE) Os_Isr_CanBusOffIsr_0(void);
 extern FUNC(void, OS_CANMAILBOXISR_0_CODE) Os_Isr_CanMailboxIsr_0(void);
 
 # define OS_STOP_SEC_CanMailboxIsr_0_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+
+# define OS_START_SEC_FTM_0_CH_0_CH_1_ISR_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+/**********************************************************************************************************************
+ *  FTM_0_CH_0_CH_1_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_FTM_0_CH_0_CH_1_ISR_CODE) Os_Isr_FTM_0_CH_0_CH_1_ISR(void);
+
+# define OS_STOP_SEC_FTM_0_CH_0_CH_1_ISR_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+
+# define OS_START_SEC_LPIT_0_CH_0_ISR_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+/**********************************************************************************************************************
+ *  LPIT_0_CH_0_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_LPIT_0_CH_0_ISR_CODE) Os_Isr_LPIT_0_CH_0_ISR(void);
+
+# define OS_STOP_SEC_LPIT_0_CH_0_ISR_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+
+# define OS_START_SEC_LPTMR_0_CH_0_ISR_CODE
+# include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
+
+/**********************************************************************************************************************
+ *  LPTMR_0_CH_0_ISR()
+ *********************************************************************************************************************/
+extern FUNC(void, OS_LPTMR_0_CH_0_ISR_CODE) Os_Isr_LPTMR_0_CH_0_ISR(void);
+
+# define OS_STOP_SEC_LPTMR_0_CH_0_ISR_CODE
 # include "MemMap.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */
 
 
