@@ -289,5 +289,7 @@
         <Component Name="CpAppTask" GenerationEnabled="true"/>
         <Component Name="Cdd_SBC_UJA1169" GenerationEnabled="true"/>
         <Component Name="CddSbc" GenerationEnabled="true"/>
+        <Component Name="SWC1" GenerationEnabled="true"/>
+        <Component Name="SWC2" GenerationEnabled="true"/>
     </SwctGeneration>
 </ProjectAssistant>

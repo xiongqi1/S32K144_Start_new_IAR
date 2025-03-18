@@ -52,6 +52,8 @@
  *  Rte_CallHook_DemSatellite_0_CBReadData_OccurrenceCounter_OccurenceCounter_ReadData_Start
  *  Rte_CallHook_DemSatellite_0_CBReadData_OdometerValue_OdometerValue_ReadData_Return
  *  Rte_CallHook_DemSatellite_0_CBReadData_OdometerValue_OdometerValue_ReadData_Start
+ *  Rte_CallHook_Test_SWC2_SWC_Service_testService_Return
+ *  Rte_CallHook_Test_SWC2_SWC_Service_testService_Start
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_0_requestedMode_Return
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_0_requestedMode_Start
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_1_requestedMode_Return
@@ -60,6 +62,16 @@
  *  Rte_ReadHook_BswM_Request_ESH_RunRequest_0_requestedMode_Start
  *  Rte_ReadHook_BswM_Request_ESH_RunRequest_1_requestedMode_Return
  *  Rte_ReadHook_BswM_Request_ESH_RunRequest_1_requestedMode_Start
+ *  Rte_ReadHook_Test_SWC1_Test_SR_WriteRead_1_DataElement1_Return
+ *  Rte_ReadHook_Test_SWC1_Test_SR_WriteRead_1_DataElement1_Start
+ *  Rte_ReadHook_Test_SWC1_Test_SR_WriteRead_1_DataElement2_Return
+ *  Rte_ReadHook_Test_SWC1_Test_SR_WriteRead_1_DataElement2_Start
+ *  Rte_ReadHook_Test_SWC2_Test_Record_Interface_Record_Return
+ *  Rte_ReadHook_Test_SWC2_Test_Record_Interface_Record_Start
+ *  Rte_ReadHook_Test_SWC2_Test_SR_WriteRead_1_DataElement1_Return
+ *  Rte_ReadHook_Test_SWC2_Test_SR_WriteRead_1_DataElement1_Start
+ *  Rte_ReadHook_Test_SWC2_Test_SR_WriteRead_1_DataElement2_Return
+ *  Rte_ReadHook_Test_SWC2_Test_SR_WriteRead_1_DataElement2_Start
  *  Rte_Runnable_BswM_BswM_MainFunction_Return
  *  Rte_Runnable_BswM_BswM_MainFunction_Start
  *  Rte_Runnable_CddSbc_Sbc_Test_Runnable_Return
@@ -200,6 +212,16 @@
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Start
+ *  Rte_Runnable_Test_SWC1_SWC_Service_testService_Return
+ *  Rte_Runnable_Test_SWC1_SWC_Service_testService_Start
+ *  Rte_Runnable_Test_SWC1_Test_SWC1_Init_Return
+ *  Rte_Runnable_Test_SWC1_Test_SWC1_Init_Start
+ *  Rte_Runnable_Test_SWC1_Test_SWC1_Runnable_Return
+ *  Rte_Runnable_Test_SWC1_Test_SWC1_Runnable_Start
+ *  Rte_Runnable_Test_SWC2_Test_SWC2_Init_Return
+ *  Rte_Runnable_Test_SWC2_Test_SWC2_Init_Start
+ *  Rte_Runnable_Test_SWC2_Test_SWC2_Runnable_Return
+ *  Rte_Runnable_Test_SWC2_Test_SWC2_Runnable_Start
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Return
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Start
  *  Rte_SwitchHook_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Return
@@ -214,6 +236,16 @@
  *  Rte_Task_Dispatch
  *  Rte_Task_WaitEvent
  *  Rte_Task_WaitEventRet
+ *  Rte_WriteHook_Test_SWC1_Test_Record_Interface_Record_Return
+ *  Rte_WriteHook_Test_SWC1_Test_Record_Interface_Record_Start
+ *  Rte_WriteHook_Test_SWC1_Test_SR_WriteRead_DataElement1_Return
+ *  Rte_WriteHook_Test_SWC1_Test_SR_WriteRead_DataElement1_Start
+ *  Rte_WriteHook_Test_SWC1_Test_SR_WriteRead_DataElement2_Return
+ *  Rte_WriteHook_Test_SWC1_Test_SR_WriteRead_DataElement2_Start
+ *  Rte_WriteHook_Test_SWC2_Test_SR_WriteRead_DataElement1_Return
+ *  Rte_WriteHook_Test_SWC2_Test_SR_WriteRead_DataElement1_Start
+ *  Rte_WriteHook_Test_SWC2_Test_SR_WriteRead_DataElement2_Return
+ *  Rte_WriteHook_Test_SWC2_Test_SR_WriteRead_DataElement2_Start
  *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_00_Return
  *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_00_Start
  *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_01_Return

@@ -127,6 +127,13 @@
  * Dcm_Data2ByteType: Array with 2 element(s) of type uint8
  * Dcm_Data4ByteType: Array with 4 element(s) of type uint8
  * Dem_MaxDataValueType: Array with 4 element(s) of type uint8
+ * Rte_DT_Test_Record_0: Array with 3 element(s) of type uint8
+ *
+ * Record Types:
+ * =============
+ * Test_Record: Record with elements
+ *   test_u8_array of type Rte_DT_Test_Record_0
+ *   RecordElement of type boolean
  *
  *********************************************************************************************************************/
 
