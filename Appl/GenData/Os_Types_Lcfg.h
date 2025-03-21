@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Types_Lcfg.h
- *   Generation Time: 2025-03-17 23:08:38
+ *   Generation Time: 2025-03-18 22:56:02
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -70,17 +70,16 @@
 #define CanIsr_0_MB00To15 CanIsr_0_MB00To15
 #define CanIsr_0_MB16To31 CanIsr_0_MB16To31
 #define CounterIsr_SystemTimer CounterIsr_SystemTimer
-#define FTM_0_CH_0_CH_1_Isr FTM_0_CH_0_CH_1_Isr
-#define LPIT_0_CH_0_Isr LPIT_0_CH_0_Isr
-#define LPTMR_0_CH_0_Isr LPTMR_0_CH_0_Isr
+#define FTM_1_CH_0_Isr FTM_1_CH_0_Isr
+#define Wdg_Isr Wdg_Isr
 
 /* Alarm identifiers. */
 #define Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms
 #define Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms
+#define Rte_Al_TE2_OsTask_BSW_SCHM_0_50ms Rte_Al_TE2_OsTask_BSW_SCHM_0_50ms
 #define Rte_Al_TE_CanTp_CanTp_MainFunction Rte_Al_TE_CanTp_CanTp_MainFunction
 #define Rte_Al_TE_Cdd_SBC_UJA1169_Sbc_Test_Runnable Rte_Al_TE_Cdd_SBC_UJA1169_Sbc_Test_Runnable
 #define Rte_Al_TE_CpLedTask_LedRunnable Rte_Al_TE_CpLedTask_LedRunnable
-#define Rte_Al_TE_OsTask_APP_0_50ms Rte_Al_TE_OsTask_APP_0_50ms
 
 /* Counter identifiers. */
 #define SystemTimer SystemTimer
@@ -153,10 +152,9 @@ typedef enum
   CanIsr_0_MB00To15 = 2,
   CanIsr_0_MB16To31 = 3,
   CounterIsr_SystemTimer = 4,
-  FTM_0_CH_0_CH_1_Isr = 5,
-  LPIT_0_CH_0_Isr = 6,
-  LPTMR_0_CH_0_Isr = 7,
-  OS_ISRID_COUNT = 8,
+  FTM_1_CH_0_Isr = 5,
+  Wdg_Isr = 6,
+  OS_ISRID_COUNT = 7,
   INVALID_ISR = OS_ISRID_COUNT
 } ISRType;
 
@@ -165,10 +163,10 @@ typedef enum
 {
   Rte_Al_TE2_OsTask_BSW_SCHM_0_10ms = 0,
   Rte_Al_TE2_OsTask_BSW_SCHM_0_20ms = 1,
-  Rte_Al_TE_CanTp_CanTp_MainFunction = 2,
-  Rte_Al_TE_Cdd_SBC_UJA1169_Sbc_Test_Runnable = 3,
-  Rte_Al_TE_CpLedTask_LedRunnable = 4,
-  Rte_Al_TE_OsTask_APP_0_50ms = 5,
+  Rte_Al_TE2_OsTask_BSW_SCHM_0_50ms = 2,
+  Rte_Al_TE_CanTp_CanTp_MainFunction = 3,
+  Rte_Al_TE_Cdd_SBC_UJA1169_Sbc_Test_Runnable = 4,
+  Rte_Al_TE_CpLedTask_LedRunnable = 5,
   OS_ALARMID_COUNT = 6
 } AlarmType;
 

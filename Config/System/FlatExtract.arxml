@@ -205,37 +205,9 @@
                                   </ANNOTATIONS>
                                   <TYPE-TREF DEST="COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE">/ComponentTypes/CddSbc</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
-                                <SW-COMPONENT-PROTOTYPE UUID="76f14968-51ef-4553-93e3-60cc55cf7345">
-                                  <SHORT-NAME>SWC1</SHORT-NAME>
-                                  <ADMIN-DATA>
-                                    <SDGS>
-                                      <SDG GID="DV:DEV">
-                                        <SD GID="DV:ImportModePreset">Keep</SD>
-                                      </SDG>
-                                    </SDGS>
-                                  </ADMIN-DATA>
-                                  <ANNOTATIONS>
-                                    <ANNOTATION>
-                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                  </ANNOTATIONS>
-                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/Test_SWC1</TYPE-TREF>
-                                </SW-COMPONENT-PROTOTYPE>
-                                <SW-COMPONENT-PROTOTYPE UUID="a14e8a47-89f6-4c58-8bce-246e9e422015">
-                                  <SHORT-NAME>SWC2</SHORT-NAME>
-                                  <ADMIN-DATA>
-                                    <SDGS>
-                                      <SDG GID="DV:DEV">
-                                        <SD GID="DV:ImportModePreset">Keep</SD>
-                                      </SDG>
-                                    </SDGS>
-                                  </ADMIN-DATA>
-                                  <ANNOTATIONS>
-                                    <ANNOTATION>
-                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                  </ANNOTATIONS>
-                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/Test_SWC2</TYPE-TREF>
+                                <SW-COMPONENT-PROTOTYPE UUID="100d0ea8-ec75-49c9-a800-7f1e01aa22e5">
+                                  <SHORT-NAME>WdgM</SHORT-NAME>
+                                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/WdgM_swc/ComponentTypes/WdgM</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
                               <CONNECTORS>
@@ -259,94 +231,6 @@
                                   <REQUESTER-IREF>
                                     <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</CONTEXT-COMPONENT-REF>
                                     <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtLedTask/UR_CN_CAN00_06ecbb07</TARGET-R-PORT-REF>
-                                  </REQUESTER-IREF>
-                                </ASSEMBLY-SW-CONNECTOR>
-                                <ASSEMBLY-SW-CONNECTOR UUID="00870db2-bc89-42ac-86f8-acc4861ddda4">
-                                  <SHORT-NAME>SWC2_Test_SR_WriteRead_SWC1_Test_SR_WriteRead_1</SHORT-NAME>
-                                  <ANNOTATIONS>
-                                    <ANNOTATION>
-                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                    <ANNOTATION>
-                                      <LABEL>
-                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
-                                      </LABEL>
-                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                  </ANNOTATIONS>
-                                  <PROVIDER-IREF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC2</CONTEXT-COMPONENT-REF>
-                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Test_SWC2/Test_SR_WriteRead</TARGET-P-PORT-REF>
-                                  </PROVIDER-IREF>
-                                  <REQUESTER-IREF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC1</CONTEXT-COMPONENT-REF>
-                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/Test_SWC1/Test_SR_WriteRead_1</TARGET-R-PORT-REF>
-                                  </REQUESTER-IREF>
-                                </ASSEMBLY-SW-CONNECTOR>
-                                <ASSEMBLY-SW-CONNECTOR UUID="e36e99e2-a25b-4b44-bde9-73047a868620">
-                                  <SHORT-NAME>SWC1_Test_SR_WriteRead_SWC2_Test_SR_WriteRead_1</SHORT-NAME>
-                                  <ANNOTATIONS>
-                                    <ANNOTATION>
-                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                    <ANNOTATION>
-                                      <LABEL>
-                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
-                                      </LABEL>
-                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                  </ANNOTATIONS>
-                                  <PROVIDER-IREF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC1</CONTEXT-COMPONENT-REF>
-                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Test_SWC1/Test_SR_WriteRead</TARGET-P-PORT-REF>
-                                  </PROVIDER-IREF>
-                                  <REQUESTER-IREF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC2</CONTEXT-COMPONENT-REF>
-                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/Test_SWC2/Test_SR_WriteRead_1</TARGET-R-PORT-REF>
-                                  </REQUESTER-IREF>
-                                </ASSEMBLY-SW-CONNECTOR>
-                                <ASSEMBLY-SW-CONNECTOR UUID="459a2011-626a-4e56-90a3-0a2e07fd5657">
-                                  <SHORT-NAME>SWC1_SWC_Service_SWC2_SWC_Service</SHORT-NAME>
-                                  <ANNOTATIONS>
-                                    <ANNOTATION>
-                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                    <ANNOTATION>
-                                      <LABEL>
-                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
-                                      </LABEL>
-                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                  </ANNOTATIONS>
-                                  <PROVIDER-IREF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC1</CONTEXT-COMPONENT-REF>
-                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Test_SWC1/SWC_Service</TARGET-P-PORT-REF>
-                                  </PROVIDER-IREF>
-                                  <REQUESTER-IREF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC2</CONTEXT-COMPONENT-REF>
-                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/Test_SWC2/SWC_Service</TARGET-R-PORT-REF>
-                                  </REQUESTER-IREF>
-                                </ASSEMBLY-SW-CONNECTOR>
-                                <ASSEMBLY-SW-CONNECTOR UUID="1caa992a-0f90-4f12-9076-27ebc2178299">
-                                  <SHORT-NAME>SWC1_Test_Record_Interface_SWC2_Test_Record_Interface</SHORT-NAME>
-                                  <ANNOTATIONS>
-                                    <ANNOTATION>
-                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                    <ANNOTATION>
-                                      <LABEL>
-                                        <L-4 L="FOR-ALL">UB:Derived from original system description</L-4>
-                                      </LABEL>
-                                      <ANNOTATION-ORIGIN>DV:Readonly</ANNOTATION-ORIGIN>
-                                    </ANNOTATION>
-                                  </ANNOTATIONS>
-                                  <PROVIDER-IREF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC1</CONTEXT-COMPONENT-REF>
-                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/Test_SWC1/Test_Record_Interface</TARGET-P-PORT-REF>
-                                  </PROVIDER-IREF>
-                                  <REQUESTER-IREF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC2</CONTEXT-COMPONENT-REF>
-                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/Test_SWC2/Test_Record_Interface</TARGET-R-PORT-REF>
                                   </REQUESTER-IREF>
                                 </ASSEMBLY-SW-CONNECTOR>
                               </CONNECTORS>
@@ -378,7 +262,6 @@
                                     <SD GID="00965f10-bcb0-42ec-9d93-a14d19fa8bcc">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="6cd128d2-d8e8-4bf6-b225-9ee91090c0af">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Cdd_SBC_UJA1169</SD>
                                     <SD GID="3ea1e045-f9c3-479c-89f6-52cf0f001a07">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM</SD>
-                                    <SD GID="6756878a-6f05-4789-9552-fc18dafa6e41">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/ComM_UR_CN_CAN00_06ecbb07_CpLedTask_UR_CN_CAN00_06ecbb07</SD>
                                     <SD GID="65d07982-b450-4fc8-97f7-fcf23ca69a48">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/CpLedTask</SD>
                                     <SD GID="4de37115-cc10-4e65-8c4b-261879a39d77">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Dcm</SD>
                                     <SD GID="9eaf53f7-3616-4d1b-b896-a10e18024eef">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/DemMaster_0</SD>
@@ -386,8 +269,7 @@
                                     <SD GID="e70ffa2b-4664-430f-abdb-4549bd94b2ce">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
                                     <SD GID="e6a62773-e3a5-47b2-ac93-080798d10a07">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
                                     <SD GID="27952c58-181a-42e9-9aa1-510d43a8b269">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore0_swc</SD>
-                                    <SD GID="76f14968-51ef-4553-93e3-60cc55cf7345">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC1</SD>
-                                    <SD GID="a14e8a47-89f6-4c58-8bce-246e9e422015">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/SWC2</SD>
+                                    <SD GID="100d0ea8-ec75-49c9-a800-7f1e01aa22e5">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/WdgM</SD>
                                     <SD GID="6090f47b-22ac-4e45-8807-2cfb3df63612">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
                                     <SD GID="67562945-d323-4eaf-8493-8ce12755f932">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
                                     <SD GID="a6157773-9fa7-4c61-9e7b-e7e2c3fd7bdf">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
@@ -399,23 +281,6 @@
                                     <SD GID="2904E0F1-1813-44D5-9A41-57A5808DD482">/ComponentTypes/CtLedTask/CtLedTask_InternalBehavior/TMT_LedRunnable</SD>
                                     <SD GID="2A37BFB3-125E-4FFF-9381-FF394F05B2E3">/ComponentTypes/CtLedTask/UR_CN_CAN00_06ecbb07</SD>
                                     <SD GID="2EB878D9-8957-4976-A7ED-B631951289EF">/ComponentTypes/CtLedTask_Implementation</SD>
-                                    <SD GID="929E415B-90DE-4AB9-85A9-2BBACB25D62D">/ComponentTypes/Test_SWC1</SD>
-                                    <SD GID="2BFFBFA9-3B81-4F5A-BE39-B0BA7B379B77">/ComponentTypes/Test_SWC1/SWC_Service</SD>
-                                    <SD GID="D5CDBE56-4B00-45B7-94D6-6FD797E3D2AF">/ComponentTypes/Test_SWC1/Test_Record_Interface</SD>
-                                    <SD GID="A32A5E22-E821-4C46-AE70-015BFED4E8CB">/ComponentTypes/Test_SWC1/Test_SR_WriteRead</SD>
-                                    <SD GID="2C914250-AD76-40A2-8449-0F49221B4477">/ComponentTypes/Test_SWC1/Test_SR_WriteRead_1</SD>
-                                    <SD GID="83743EFC-7CFF-46B9-A949-A8106E41A31D">/ComponentTypes/Test_SWC1/Test_SWC1_InternalBehavior/OIT_SWC_Service_testService_SWC_Service_testService</SD>
-                                    <SD GID="490A9B09-F86D-4060-B934-B0EC0E880FCE">/ComponentTypes/Test_SWC1/Test_SWC1_InternalBehavior/TMT_Test_SWC1_Runnable</SD>
-                                    <SD GID="E9B9CA6D-EE22-4DFD-BB9D-68A9FAC2B022">/ComponentTypes/Test_SWC1/Test_SWC1_InternalBehavior/Test_SWC1_InitEvent</SD>
-                                    <SD GID="C6C9CD92-2311-4313-B128-F781B65C5F6B">/ComponentTypes/Test_SWC1_Implementation</SD>
-                                    <SD GID="14B3ADF2-71D1-4FDD-8C32-E4FD4064335D">/ComponentTypes/Test_SWC2</SD>
-                                    <SD GID="DDCA7DC0-0542-4210-A884-A32ABF3B8889">/ComponentTypes/Test_SWC2/SWC_Service</SD>
-                                    <SD GID="B738E24B-745C-4E96-A2C4-5DE7B2BAB8A5">/ComponentTypes/Test_SWC2/Test_Record_Interface</SD>
-                                    <SD GID="644DCE35-FA3F-484C-A51D-12E52C1D4925">/ComponentTypes/Test_SWC2/Test_SR_WriteRead</SD>
-                                    <SD GID="32FA5684-D594-4A46-9117-A860C37701B2">/ComponentTypes/Test_SWC2/Test_SR_WriteRead_1</SD>
-                                    <SD GID="3FFF9D83-CC93-4915-8911-5D0F936E15E5">/ComponentTypes/Test_SWC2/Test_SWC2_InternalBehavior/TMT_Test_SWC2_Runnable</SD>
-                                    <SD GID="C31FAB52-8071-4625-B3CA-C8CD46597853">/ComponentTypes/Test_SWC2/Test_SWC2_InternalBehavior/Test_SWC2_InitEvent</SD>
-                                    <SD GID="F8CBC0A4-639E-457A-976F-E875CBA1ED8B">/ComponentTypes/Test_SWC2_Implementation</SD>
                                     <SD GID="FA2722A8-DD7A-493E-ACE9-AA8189A6F547">/DataType/Constraint/DC_sig_LampCnt</SD>
                                     <SD GID="A09255C0-B996-42CD-9521-11F45444768B">/DataType/Constraint/DC_sig_RearInteriorLight</SD>
                                     <SD GID="B9880022-FF17-47E2-A356-E82C917F2A49">/DataType/Constraint/DC_sig_State_RearInteriorLight</SD>
@@ -426,8 +291,6 @@
                                     <SD GID="FD22F03B-8D66-4CBA-A825-9E3899E072AF">/ECUCompositionTypes/ECU_Composition</SD>
                                     <SD GID="F0764082-4F63-4CC5-8ADC-DB14FF6B95F7">/ECUCompositionTypes/ECU_Composition/Cdd_SBC_UJA1169</SD>
                                     <SD GID="6E3B8BA0-A77C-4C85-B120-56B689E415B9">/ECUCompositionTypes/ECU_Composition/CpLedTask</SD>
-                                    <SD GID="C7C74718-6113-4AAA-9E3E-3F04B63A6799">/ECUCompositionTypes/ECU_Composition/SWC1</SD>
-                                    <SD GID="1E39C255-814D-4994-AF44-AEBB36A27062">/ECUCompositionTypes/ECU_Composition/SWC2</SD>
                                     <SD GID="a43e81d2-d27b-4c23-b29d-7f51d7c5996c">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
                                     <SD GID="96086dc4-287c-4b6a-b413-586fecc74961">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BSWM_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="5943179b-c366-4b7f-937b-e5aff30db49a">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior/BswM_MainFunction</SD>
@@ -839,6 +702,91 @@
                                     <SD GID="4aa6ce32-73aa-4583-b712-41915cb75b92">/MICROSAR/PduR_ib_bswmd/BswModuleDescriptions/PduR/PduRBehavior/PDUR_EXCLUSIVE_AREA_0</SD>
                                     <SD GID="e6883765-27bb-40c8-b767-748b9c7ee1a1">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte/RteBehavior</SD>
                                     <SD GID="b98f5eaa-a922-4fe9-8f50-29a6af23f979">/MICROSAR/Rte_ib_bswmd/BswModuleDescriptions/Rte_ComSendSignalProxyPeriodic</SD>
+                                    <SD GID="5cec3624-64b3-4c18-a2a9-58765bda9a7d">/MICROSAR/WdgM_ib_bswmd/BswModuleDescriptions/WdgM/WdgMBehavior</SD>
+                                    <SD GID="20e1c265-09df-4f85-8a52-9b2f8f2025b1">/MICROSAR/WdgM_ib_bswmd/BswModuleDescriptions/WdgM/WdgMBehavior/WDGM_EXCLUSIVE_AREA_0</SD>
+                                    <SD GID="067deb3d-6fee-405e-9a15-d77fe4ec2ee7">/MICROSAR/WdgM_ib_bswmd/BswModuleDescriptions/WdgM/WdgMBehavior/WdgM_MainFunction</SD>
+                                    <SD GID="e54e2a93-c42f-4831-bf00-7bf070d91550">/MICROSAR/WdgM_ib_bswmd/BswModuleDescriptions/WdgM/WdgMBehavior/WdgM_MainFunctionTimingEvent0</SD>
+                                    <SD GID="1aff3f35-9ce9-4007-b19e-738089e03fde">/MICROSAR/WdgM_ib_bswmd/BswModuleDescriptions/WdgM_MainFunction</SD>
+                                    <SD GID="c49dd54d-c794-4bdd-afd1-94368786e8ff">/MICROSAR/WdgM_swc</SD>
+                                    <SD GID="aaf18825-ab2d-4ccf-a6a1-c413312612ed">/MICROSAR/WdgM_swc/ComponentTypes</SD>
+                                    <SD GID="daa77c96-258e-4909-a195-0305010e4a3d">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior</SD>
+                                    <SD GID="11ccd012-8eb7-4db7-8084-4de965f6b00d">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/CheckpointReached</SD>
+                                    <SD GID="323885a0-49c0-47ce-b175-7d24a3bf0c0f">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/GetFirstExpiredSEID</SD>
+                                    <SD GID="9b3300c2-9fa6-4d63-819d-f6f472b7c28e">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/GetGlobalStatus</SD>
+                                    <SD GID="8bb2fc17-1899-4149-b413-36e822d09739">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/GetLocalStatus</SD>
+                                    <SD GID="8d3ea3bd-ce33-46b9-9bdb-ba7f59e91827">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/GetMode</SD>
+                                    <SD GID="4e69e92f-4d04-4e1e-9064-3137f82a5950">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/OpEventCheckpointReached_CheckpointReached_alive_WdgMSupervisedEntity_LedTask</SD>
+                                    <SD GID="5f4173a0-9c57-44ac-bca2-4bba48b6051e">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/OpEventGetFirstExpiredSEID_GetFirstExpiredSEID_general</SD>
+                                    <SD GID="843ef33e-59a3-46c6-8273-bba908875ab6">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/OpEventGetGlobalStatus_GetGlobalStatus_general</SD>
+                                    <SD GID="ee1e7f50-d7d9-49d4-a1a8-28a7b68cfacd">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/OpEventGetLocalStatus_GetLocalStatus_general</SD>
+                                    <SD GID="b3bab781-9444-4740-b753-79f257447c08">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/OpEventGetLocalStatus_GetLocalStatus_localStatus_WdgMSupervisedEntity_LedTask</SD>
+                                    <SD GID="0e75a95f-89a9-4c02-a293-5ed799b97bf6">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/OpEventGetMode_GetMode_general</SD>
+                                    <SD GID="baa65405-28b0-4b60-9f3f-ff034b0b93b9">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/OpEventPerformReset_PerformReset_general</SD>
+                                    <SD GID="037cc623-f9d7-4723-9f52-fd5d26992fb2">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/OpEventSetMode_SetMode_general</SD>
+                                    <SD GID="ed085a00-d574-458a-9eeb-b15a966a1477">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/PerformReset</SD>
+                                    <SD GID="a0c0635d-15dd-40d6-833b-9d15cc81e18c">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/SetMode</SD>
+                                    <SD GID="663e5d56-110c-49d7-a249-9529754231e5">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/Timer_WdgM_MainFunction</SD>
+                                    <SD GID="022e41c9-da13-4cba-8763-f687fea59f8d">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/WdgM_MainFunction</SD>
+                                    <SD GID="3435226e-6623-4e89-b97a-81845fa8bd9f">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/WdgM_MainFunction/ModeSwitchPointWdgM_MainFunction_globalmode_Core0_currentMode</SD>
+                                    <SD GID="4ebb9902-0884-4873-8d5d-1f5e5fe2d28d">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/WdgMInternalBehavior/WdgM_MainFunction/ModeSwitchPointWdgM_MainFunction_mode_WdgMSupervisedEntity_LedTask_currentMode</SD>
+                                    <SD GID="4bf98907-8ad5-4d56-a653-3b63a54fafdc">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/alive_WdgMSupervisedEntity_LedTask</SD>
+                                    <SD GID="b6085b12-71bf-4858-84d7-3d2f8020f15e">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/general</SD>
+                                    <SD GID="2e1999c1-2c74-4b5b-8905-7a3dbc60e886">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/globalmode_Core0</SD>
+                                    <SD GID="10b5e41c-4a5a-48ab-8492-ebb3b281f913">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/localStatus_WdgMSupervisedEntity_LedTask</SD>
+                                    <SD GID="428b2336-80b0-413c-9f80-64a83b5c2d66">/MICROSAR/WdgM_swc/ComponentTypes/WdgM/mode_WdgMSupervisedEntity_LedTask</SD>
+                                    <SD GID="33ee43f4-4c1a-4611-aedd-44463abdbe63">/MICROSAR/WdgM_swc/DataTypes</SD>
+                                    <SD GID="0e37d41f-bd24-4d6c-8254-d5ce20f49d9a">/MICROSAR/WdgM_swc/DataTypes/CompuMethods</SD>
+                                    <SD GID="2e191db7-2e0d-4582-a982-3fa060f2d361">/MICROSAR/WdgM_swc/DataTypes/CompuMethods/WdgMMode</SD>
+                                    <SD GID="76413d9e-4c40-43fa-9f83-08f863c90586">/MICROSAR/WdgM_swc/DataTypes/CompuMethods/WdgM_GlobalStatusType</SD>
+                                    <SD GID="f1bcbfbd-94a7-449d-8519-70cbea9bd280">/MICROSAR/WdgM_swc/DataTypes/CompuMethods/WdgM_LocalStatusType</SD>
+                                    <SD GID="12ce750b-e304-42c0-a8b6-396a64d28480">/MICROSAR/WdgM_swc/DataTypes/DataConstrs</SD>
+                                    <SD GID="7a9e0743-8692-48f0-988f-65c59af2f12a">/MICROSAR/WdgM_swc/DataTypes/DataConstrs/WdgMMode_Constr</SD>
+                                    <SD GID="f9cb990b-2648-480d-9f81-e11e4345a82a">/MICROSAR/WdgM_swc/DataTypes/DataConstrs/WdgM_CheckpointIdType_Constr</SD>
+                                    <SD GID="a94b351d-6f8b-4fc4-96bc-80a7a3c75c3b">/MICROSAR/WdgM_swc/DataTypes/DataConstrs/WdgM_GlobalStatusType_Constr</SD>
+                                    <SD GID="c2e935fc-81df-476c-a873-b19043fa4262">/MICROSAR/WdgM_swc/DataTypes/DataConstrs/WdgM_LocalStatusType_Constr</SD>
+                                    <SD GID="228292e0-5eac-402c-b1f2-9136369dc28e">/MICROSAR/WdgM_swc/DataTypes/DataConstrs/WdgM_ModeType_Constr</SD>
+                                    <SD GID="4fc41847-1937-4a72-9c60-74a027785f6a">/MICROSAR/WdgM_swc/DataTypes/DataConstrs/WdgM_SupervisedEntityIdType_Constr</SD>
+                                    <SD GID="f576dfd5-8ace-4c08-84ab-7375d2f1e0fb">/MICROSAR/WdgM_swc/DataTypes/WdgMMode</SD>
+                                    <SD GID="c56026ef-2177-4cd0-984a-88199e146150">/MICROSAR/WdgM_swc/DataTypes/WdgM_CheckpointIdType</SD>
+                                    <SD GID="00668e19-2496-40cc-b726-14ebc88f2c35">/MICROSAR/WdgM_swc/DataTypes/WdgM_GlobalStatusType</SD>
+                                    <SD GID="314425b8-4709-4664-a026-c64db9cce518">/MICROSAR/WdgM_swc/DataTypes/WdgM_LocalStatusType</SD>
+                                    <SD GID="1ca5104c-39f6-4906-b1a3-ebdd864e1865">/MICROSAR/WdgM_swc/DataTypes/WdgM_ModeType</SD>
+                                    <SD GID="25d416e0-87b7-40d2-856c-eff504045be7">/MICROSAR/WdgM_swc/DataTypes/WdgM_SupervisedEntityIdType</SD>
+                                    <SD GID="12bdb6b8-604d-4ead-b47f-6af2cc0e36f4">/MICROSAR/WdgM_swc/Interfaces</SD>
+                                    <SD GID="e5abe7ed-91e5-430a-b9ec-a8ec92ab1e0f">/MICROSAR/WdgM_swc/Interfaces/WdgM_AliveSupervision</SD>
+                                    <SD GID="50dbe979-ff68-48e4-9316-3e764c683b1c">/MICROSAR/WdgM_swc/Interfaces/WdgM_AliveSupervision/CheckpointReached</SD>
+                                    <SD GID="164d66b2-6e7f-4a23-9d5b-20b0de6eed6a">/MICROSAR/WdgM_swc/Interfaces/WdgM_AliveSupervision/CheckpointReached/CPID</SD>
+                                    <SD GID="32cb2c79-533d-40c4-823c-02b673a9ae82">/MICROSAR/WdgM_swc/Interfaces/WdgM_AliveSupervision/E_NOT_OK</SD>
+                                    <SD GID="7d0f438c-f9f9-45ba-b874-466f2aa87a64">/MICROSAR/WdgM_swc/Interfaces/WdgM_General</SD>
+                                    <SD GID="5fc82d22-9e71-4145-b7b4-c471fd7d18ad">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/E_NOT_OK</SD>
+                                    <SD GID="6417b9cf-7d27-43b3-b344-2f9476b73c9e">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetFirstExpiredSEID</SD>
+                                    <SD GID="b8f712e3-1e92-4175-80be-5c9618ff23df">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetFirstExpiredSEID/SEID</SD>
+                                    <SD GID="4a916110-a629-448a-9cbc-8057fdb1e74c">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetGlobalStatus</SD>
+                                    <SD GID="68b39d9d-5073-436e-8b64-0dc24cfee569">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetGlobalStatus/Status</SD>
+                                    <SD GID="8e0e1924-5cd2-4161-9e18-505886736a3c">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetLocalStatus</SD>
+                                    <SD GID="98eebec7-feb2-4aa0-8a8a-fbe77cdd53b7">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetLocalStatus/SEID</SD>
+                                    <SD GID="adc4bb0c-9039-4610-b132-88b2715547af">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetLocalStatus/Status</SD>
+                                    <SD GID="e8c813a5-32b2-4b6a-b8d5-d5c06b3cf21a">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetMode</SD>
+                                    <SD GID="60f6934a-5ed4-4fc0-b065-f2dd46ee31c8">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/GetMode/Mode</SD>
+                                    <SD GID="b163f151-d113-4958-93f5-b1b60e9f8394">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/PerformReset</SD>
+                                    <SD GID="bb2bf934-3b63-448f-b791-d89733ac7436">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/SetMode</SD>
+                                    <SD GID="e74121ff-3b1a-4dba-b1a1-b0c950721864">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/SetMode/CallerID</SD>
+                                    <SD GID="c674d03d-5823-4488-8639-ff213ba5f366">/MICROSAR/WdgM_swc/Interfaces/WdgM_General/SetMode/Mode</SD>
+                                    <SD GID="edf95eb9-7c51-41ac-86f5-a3da87ef8f2a">/MICROSAR/WdgM_swc/Interfaces/WdgM_GlobalMode</SD>
+                                    <SD GID="ee086b9f-3623-4af2-a09d-26ab7e43f26d">/MICROSAR/WdgM_swc/Interfaces/WdgM_GlobalMode/currentMode</SD>
+                                    <SD GID="c757f5e7-dd32-43ce-bc54-6e0fbf0a0ad5">/MICROSAR/WdgM_swc/Interfaces/WdgM_IndividualMode</SD>
+                                    <SD GID="dd3634f2-e713-4b67-9b00-3ee00954795d">/MICROSAR/WdgM_swc/Interfaces/WdgM_IndividualMode/currentMode</SD>
+                                    <SD GID="fe425924-f94a-42dd-b89d-f398804aa962">/MICROSAR/WdgM_swc/Interfaces/WdgM_LocalStatus</SD>
+                                    <SD GID="1792f15f-c0b5-4aa7-b6c9-228cf8433a23">/MICROSAR/WdgM_swc/Interfaces/WdgM_LocalStatus/E_NOT_OK</SD>
+                                    <SD GID="d946c7d5-d5db-4f55-a4d0-91c11ddc65e6">/MICROSAR/WdgM_swc/Interfaces/WdgM_LocalStatus/GetLocalStatus</SD>
+                                    <SD GID="1c99bc18-655a-4daa-b470-ff1822d5302f">/MICROSAR/WdgM_swc/Interfaces/WdgM_LocalStatus/GetLocalStatus/Status</SD>
+                                    <SD GID="0cd5d587-0981-46a0-b963-0271efdf774f">/MICROSAR/WdgM_swc/WdgMMappingSet</SD>
+                                    <SD GID="caf66098-40e7-4a09-8bf2-148cc8cf322a">/MICROSAR/WdgM_swc/WdgM_Mode</SD>
+                                    <SD GID="059abbac-11c7-4db3-a50c-76b84ea5bca7">/MICROSAR/WdgM_swc/WdgM_Mode/SUPERVISION_DEACTIVATED</SD>
+                                    <SD GID="03cd0c09-a584-4975-b25b-7669685b3c1b">/MICROSAR/WdgM_swc/WdgM_Mode/SUPERVISION_EXPIRED</SD>
+                                    <SD GID="45a5def6-af4e-4dd9-b559-ea2075072bf1">/MICROSAR/WdgM_swc/WdgM_Mode/SUPERVISION_FAILED</SD>
+                                    <SD GID="edadfeb8-8e36-434d-964a-ae9896740d19">/MICROSAR/WdgM_swc/WdgM_Mode/SUPERVISION_OK</SD>
+                                    <SD GID="8dcff01b-c626-4ae1-88b8-35700b77dcd5">/MICROSAR/WdgM_swc/WdgM_Mode/SUPERVISION_STOPPED</SD>
                                     <SD GID="{AF35D1D4-4362-4055-B014-780FA6F9E75B}">/Predefined_DEV/CompuMethods/Dem_UdsStatusByteType</SD>
                                     <SD GID="F2570AA0-D6E5-4217-80F7-5F60B8778133">/Predefined_DEV/CompuMethods/NvM_RequestResultType</SD>
                                     <SD GID="007B24D3-5C46-4986-B3CA-31D71FEDD510">/Predefined_DEV/CompuMethods/NvM_ServiceIdType</SD>
@@ -885,9 +833,6 @@
                                     <SD GID="29D8C45D-AD65-4ADB-A8C0-9051D3BA8EB3">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
                                     <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
                                     <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
-                                    <SD GID="97e6e201-d3a3-4245-a5b1-ca600bf5a2f8">/Spi</SD>
-                                    <SD GID="39b252eb-c991-4af5-92b0-62f91eadbb32">/TS_T40D2M10I1R0/Adc_ib_bswmd</SD>
-                                    <SD GID="4309e50e-167b-4511-9395-2a7a9f89c5c9">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="44118243-93a0-40f0-8dbe-69a83c3fa804">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior</SD>
                                     <SD GID="a0e02a25-df3f-412a-865d-7762e405008c">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_00</SD>
                                     <SD GID="cef30c42-9c01-47b9-ae08-145bde1a2ae6">/TS_T40D2M10I1R0/Adc_ib_bswmd/BswModuleDescriptions/Adc/AdcBehavior/ADC_EXCLUSIVE_AREA_01</SD>
@@ -952,8 +897,6 @@
                                     <SD GID="197bba90-38f4-44c6-9e15-c620e73a33a5">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_28</SD>
                                     <SD GID="061ededf-76c8-419e-802e-8848f5369166">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_29</SD>
                                     <SD GID="7e856dec-377d-4bd3-88a7-ddc69f8fbe60">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_30</SD>
-                                    <SD GID="093dc4eb-1027-4bd5-b0f8-04ac7a0ac167">/TS_T40D2M10I1R0/Gpt_ib_bswmd</SD>
-                                    <SD GID="279e81d5-9874-4dcc-88c2-26515b5504ee">/TS_T40D2M10I1R0/Gpt_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="794eace5-c1f0-41ca-a657-d5fda5729850">/TS_T40D2M10I1R0/Gpt_ib_bswmd/BswModuleDescriptions/Gpt/GptBehavior</SD>
                                     <SD GID="4612e588-7ab6-436e-b640-6e567a76e0a1">/TS_T40D2M10I1R0/Gpt_ib_bswmd/BswModuleDescriptions/Gpt/GptBehavior/GPT_EXCLUSIVE_AREA_00</SD>
                                     <SD GID="2f89bd46-6be7-4eb5-aa4a-d4c4e60feacc">/TS_T40D2M10I1R0/Gpt_ib_bswmd/BswModuleDescriptions/Gpt/GptBehavior/GPT_EXCLUSIVE_AREA_01</SD>
@@ -1084,8 +1027,6 @@
                                     <SD GID="95de89ce-e659-4403-8cf3-1ffa787fa6e7">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_28</SD>
                                     <SD GID="20fcc88c-53d5-468f-bf68-5223336041a9">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_29</SD>
                                     <SD GID="eabcf2a8-a246-4fda-a849-5c5892b74c50">/TS_T40D2M10I1R0/Port_ib_bswmd/BswModuleDescriptions/Port/PortBehavior/PORT_EXCLUSIVE_AREA_30</SD>
-                                    <SD GID="c0f925d1-7268-4373-9831-a79fcdb6fd05">/TS_T40D2M10I1R0/Spi_ib_bswmd</SD>
-                                    <SD GID="d280bab3-0634-4766-bf9c-25e54cdd77db">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="7b8f0f6f-8ff7-4fce-ac21-53115e2de32d">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior</SD>
                                     <SD GID="673feebe-a5f8-4465-9eef-312d2c8bf96d">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_00</SD>
                                     <SD GID="4480ff95-fcde-40d2-811b-48f4fc7e592c">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/SPI_EXCLUSIVE_AREA_01</SD>
@@ -1121,6 +1062,38 @@
                                     <SD GID="94c88959-2468-40f2-acba-09999cb8274b">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_Handling</SD>
                                     <SD GID="cfb81dfd-566e-4280-a862-7b2dbc34c398">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi/SpiBehavior/Spi_MainFunction_HandlingTimingEvent0</SD>
                                     <SD GID="7ee0b7c2-7190-4ffd-9558-a3bdfca84943">/TS_T40D2M10I1R0/Spi_ib_bswmd/BswModuleDescriptions/Spi_MainFunction_Handling</SD>
+                                    <SD GID="ee0b7ac5-4aab-41b5-8d07-dbe00d4e3dfc">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior</SD>
+                                    <SD GID="6da4aaf5-41ef-4fd3-8e98-6bbc7ab002ba">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_00</SD>
+                                    <SD GID="175cdff6-c1f1-4ba0-96a7-d9801b8b4a88">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_01</SD>
+                                    <SD GID="2559e1d0-b66e-45e1-954a-36928e549c13">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_02</SD>
+                                    <SD GID="367dc6ca-8bdc-4c72-b014-5acc69910e4f">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_03</SD>
+                                    <SD GID="5912d59b-91f5-40fa-ad13-c199c8ccc53f">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_04</SD>
+                                    <SD GID="b8f19bb2-609b-4abd-8990-cb6780b2268d">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_05</SD>
+                                    <SD GID="3de8fbdd-7aea-45c7-b0db-1449c7b43c06">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_06</SD>
+                                    <SD GID="cbe2d368-614e-4c02-932d-733ce37021e5">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_07</SD>
+                                    <SD GID="09ebb58c-0800-4b96-8f8c-9ad3fd9ab6b6">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_08</SD>
+                                    <SD GID="3c4a179a-8d3b-483c-ac78-8b7007ff8a79">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_09</SD>
+                                    <SD GID="fd051370-c246-44f6-b420-ca381fed4af6">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_10</SD>
+                                    <SD GID="9c8bf6bb-1e7b-4182-8586-19fd005f367f">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_11</SD>
+                                    <SD GID="0e6060ff-73bc-4188-ae44-8a8a906288ec">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_12</SD>
+                                    <SD GID="97dc5485-0fdb-4e90-aa8b-999bac721c99">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_13</SD>
+                                    <SD GID="6f6ffccd-faf0-4029-927b-f8cd42c99c70">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_14</SD>
+                                    <SD GID="43595788-bda0-4a62-bf99-a12a1ffb1251">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_15</SD>
+                                    <SD GID="762a9266-a0a8-45cf-a518-3db4323df294">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_16</SD>
+                                    <SD GID="52fb8c47-f2d1-4939-a55f-e7c0044b3ea6">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_17</SD>
+                                    <SD GID="63f0c025-8567-43d1-902f-89ffde8c7311">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_18</SD>
+                                    <SD GID="61b4f90f-03a9-455d-9d44-cb23e92b9541">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_19</SD>
+                                    <SD GID="86cceb3a-aa51-45c2-abe6-c205b0c42bd2">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_20</SD>
+                                    <SD GID="b347ea17-c2a2-4295-96b6-d31b9c308dc0">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_21</SD>
+                                    <SD GID="c81f4e5f-15cd-4234-aaf0-d656f0d668d6">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_22</SD>
+                                    <SD GID="03d0502f-0123-4fe2-8dbe-fddeccf1243f">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_23</SD>
+                                    <SD GID="7d8ed6fd-b992-48ae-83dc-bf42f1b3db85">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_24</SD>
+                                    <SD GID="4698926a-5b9e-4fdf-9369-8fbb762fcb54">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_25</SD>
+                                    <SD GID="77ac5764-997d-4e14-8932-06067252659d">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_26</SD>
+                                    <SD GID="f77f3f2a-fdde-4266-9c0b-3749e77c546d">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_27</SD>
+                                    <SD GID="2f0dd85d-dfa0-415b-957c-9e2ed6711b9b">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_28</SD>
+                                    <SD GID="26c8b36e-0f7d-47d7-aaae-96fb963f3b8b">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_29</SD>
+                                    <SD GID="ac5f3b39-a202-46bf-b6b2-e10f08a4b350">/TS_T40D2M10I1R0/Wdg_ib_bswmd/BswModuleDescriptions/Wdg/WdgBehavior/WDG_EXCLUSIVE_AREA_30</SD>
                                     <SD GID="29F5C8CD-4E0A-4B35-B776-F132348B6E03">/VehicleProject/System/EcuSwComposition</SD>
                                   </SDG>
                                 </SDGS>

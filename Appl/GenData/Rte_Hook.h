@@ -52,8 +52,6 @@
  *  Rte_CallHook_DemSatellite_0_CBReadData_OccurrenceCounter_OccurenceCounter_ReadData_Start
  *  Rte_CallHook_DemSatellite_0_CBReadData_OdometerValue_OdometerValue_ReadData_Return
  *  Rte_CallHook_DemSatellite_0_CBReadData_OdometerValue_OdometerValue_ReadData_Start
- *  Rte_CallHook_Test_SWC2_SWC_Service_testService_Return
- *  Rte_CallHook_Test_SWC2_SWC_Service_testService_Start
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_0_requestedMode_Return
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_0_requestedMode_Start
  *  Rte_ReadHook_BswM_Request_ESH_PostRunRequest_1_requestedMode_Return
@@ -62,16 +60,6 @@
  *  Rte_ReadHook_BswM_Request_ESH_RunRequest_0_requestedMode_Start
  *  Rte_ReadHook_BswM_Request_ESH_RunRequest_1_requestedMode_Return
  *  Rte_ReadHook_BswM_Request_ESH_RunRequest_1_requestedMode_Start
- *  Rte_ReadHook_Test_SWC1_Test_SR_WriteRead_1_DataElement1_Return
- *  Rte_ReadHook_Test_SWC1_Test_SR_WriteRead_1_DataElement1_Start
- *  Rte_ReadHook_Test_SWC1_Test_SR_WriteRead_1_DataElement2_Return
- *  Rte_ReadHook_Test_SWC1_Test_SR_WriteRead_1_DataElement2_Start
- *  Rte_ReadHook_Test_SWC2_Test_Record_Interface_Record_Return
- *  Rte_ReadHook_Test_SWC2_Test_Record_Interface_Record_Start
- *  Rte_ReadHook_Test_SWC2_Test_SR_WriteRead_1_DataElement1_Return
- *  Rte_ReadHook_Test_SWC2_Test_SR_WriteRead_1_DataElement1_Start
- *  Rte_ReadHook_Test_SWC2_Test_SR_WriteRead_1_DataElement2_Return
- *  Rte_ReadHook_Test_SWC2_Test_SR_WriteRead_1_DataElement2_Start
  *  Rte_Runnable_BswM_BswM_MainFunction_Return
  *  Rte_Runnable_BswM_BswM_MainFunction_Start
  *  Rte_Runnable_CddSbc_Sbc_Test_Runnable_Return
@@ -212,16 +200,22 @@
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Start
- *  Rte_Runnable_Test_SWC1_SWC_Service_testService_Return
- *  Rte_Runnable_Test_SWC1_SWC_Service_testService_Start
- *  Rte_Runnable_Test_SWC1_Test_SWC1_Init_Return
- *  Rte_Runnable_Test_SWC1_Test_SWC1_Init_Start
- *  Rte_Runnable_Test_SWC1_Test_SWC1_Runnable_Return
- *  Rte_Runnable_Test_SWC1_Test_SWC1_Runnable_Start
- *  Rte_Runnable_Test_SWC2_Test_SWC2_Init_Return
- *  Rte_Runnable_Test_SWC2_Test_SWC2_Init_Start
- *  Rte_Runnable_Test_SWC2_Test_SWC2_Runnable_Return
- *  Rte_Runnable_Test_SWC2_Test_SWC2_Runnable_Start
+ *  Rte_Runnable_WdgM_CheckpointReached_Return
+ *  Rte_Runnable_WdgM_CheckpointReached_Start
+ *  Rte_Runnable_WdgM_GetFirstExpiredSEID_Return
+ *  Rte_Runnable_WdgM_GetFirstExpiredSEID_Start
+ *  Rte_Runnable_WdgM_GetGlobalStatus_Return
+ *  Rte_Runnable_WdgM_GetGlobalStatus_Start
+ *  Rte_Runnable_WdgM_GetLocalStatus_Return
+ *  Rte_Runnable_WdgM_GetLocalStatus_Start
+ *  Rte_Runnable_WdgM_GetMode_Return
+ *  Rte_Runnable_WdgM_GetMode_Start
+ *  Rte_Runnable_WdgM_PerformReset_Return
+ *  Rte_Runnable_WdgM_PerformReset_Start
+ *  Rte_Runnable_WdgM_SetMode_Return
+ *  Rte_Runnable_WdgM_SetMode_Start
+ *  Rte_Runnable_WdgM_WdgM_MainFunction_Return
+ *  Rte_Runnable_WdgM_WdgM_MainFunction_Start
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Return
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Start
  *  Rte_SwitchHook_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Return
@@ -232,20 +226,14 @@
  *  Rte_SwitchHook_Dcm_DcmDiagnosticSessionControl_DcmDiagnosticSessionControl_Start
  *  Rte_SwitchHook_Dcm_DcmEcuReset_DcmEcuReset_Return
  *  Rte_SwitchHook_Dcm_DcmEcuReset_DcmEcuReset_Start
+ *  Rte_SwitchHook_WdgM_globalmode_Core0_currentMode_Return
+ *  Rte_SwitchHook_WdgM_globalmode_Core0_currentMode_Start
+ *  Rte_SwitchHook_WdgM_mode_WdgMSupervisedEntity_LedTask_currentMode_Return
+ *  Rte_SwitchHook_WdgM_mode_WdgMSupervisedEntity_LedTask_currentMode_Start
  *  Rte_Task_Activate
  *  Rte_Task_Dispatch
  *  Rte_Task_WaitEvent
  *  Rte_Task_WaitEventRet
- *  Rte_WriteHook_Test_SWC1_Test_Record_Interface_Record_Return
- *  Rte_WriteHook_Test_SWC1_Test_Record_Interface_Record_Start
- *  Rte_WriteHook_Test_SWC1_Test_SR_WriteRead_DataElement1_Return
- *  Rte_WriteHook_Test_SWC1_Test_SR_WriteRead_DataElement1_Start
- *  Rte_WriteHook_Test_SWC1_Test_SR_WriteRead_DataElement2_Return
- *  Rte_WriteHook_Test_SWC1_Test_SR_WriteRead_DataElement2_Start
- *  Rte_WriteHook_Test_SWC2_Test_SR_WriteRead_DataElement1_Return
- *  Rte_WriteHook_Test_SWC2_Test_SR_WriteRead_DataElement1_Start
- *  Rte_WriteHook_Test_SWC2_Test_SR_WriteRead_DataElement2_Return
- *  Rte_WriteHook_Test_SWC2_Test_SR_WriteRead_DataElement2_Start
  *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_00_Return
  *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_00_Start
  *  SchM_EnterHook_Adc_ADC_EXCLUSIVE_AREA_01_Return
@@ -764,6 +752,70 @@
  *  SchM_EnterHook_Spi_SPI_EXCLUSIVE_AREA_29_Start
  *  SchM_EnterHook_Spi_SPI_EXCLUSIVE_AREA_30_Return
  *  SchM_EnterHook_Spi_SPI_EXCLUSIVE_AREA_30_Start
+ *  SchM_EnterHook_WdgM_WDGM_EXCLUSIVE_AREA_0_Return
+ *  SchM_EnterHook_WdgM_WDGM_EXCLUSIVE_AREA_0_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_00_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_00_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_01_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_01_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_02_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_02_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_03_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_03_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_04_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_04_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_05_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_05_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_06_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_06_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_07_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_07_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_08_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_08_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_09_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_09_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_10_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_10_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_11_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_11_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_12_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_12_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_13_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_13_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_14_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_14_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_15_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_15_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_16_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_16_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_17_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_17_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_18_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_18_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_19_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_19_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_20_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_20_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_21_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_21_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_22_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_22_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_23_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_23_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_24_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_24_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_25_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_25_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_26_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_26_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_27_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_27_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_28_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_28_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_29_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_29_Start
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_30_Return
+ *  SchM_EnterHook_Wdg_WDG_EXCLUSIVE_AREA_30_Start
  *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_00_Return
  *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_00_Start
  *  SchM_ExitHook_Adc_ADC_EXCLUSIVE_AREA_01_Return
@@ -1282,6 +1334,70 @@
  *  SchM_ExitHook_Spi_SPI_EXCLUSIVE_AREA_29_Start
  *  SchM_ExitHook_Spi_SPI_EXCLUSIVE_AREA_30_Return
  *  SchM_ExitHook_Spi_SPI_EXCLUSIVE_AREA_30_Start
+ *  SchM_ExitHook_WdgM_WDGM_EXCLUSIVE_AREA_0_Return
+ *  SchM_ExitHook_WdgM_WDGM_EXCLUSIVE_AREA_0_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_00_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_00_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_01_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_01_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_02_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_02_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_03_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_03_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_04_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_04_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_05_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_05_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_06_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_06_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_07_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_07_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_08_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_08_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_09_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_09_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_10_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_10_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_11_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_11_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_12_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_12_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_13_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_13_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_14_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_14_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_15_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_15_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_16_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_16_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_17_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_17_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_18_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_18_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_19_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_19_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_20_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_20_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_21_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_21_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_22_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_22_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_23_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_23_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_24_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_24_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_25_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_25_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_26_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_26_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_27_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_27_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_28_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_28_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_29_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_29_Start
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_30_Return
+ *  SchM_ExitHook_Wdg_WDG_EXCLUSIVE_AREA_30_Start
  *  SchM_Schedulable_BswM_BswM_MainFunction_Return
  *  SchM_Schedulable_BswM_BswM_MainFunction_Start
  *  SchM_Schedulable_CanSM_CanSM_MainFunction_Return
@@ -1310,6 +1426,8 @@
  *  SchM_Schedulable_EcuM_EcuM_MainFunction_Start
  *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Return
  *  SchM_Schedulable_Spi_Spi_MainFunction_Handling_Start
+ *  SchM_Schedulable_WdgM_WdgM_MainFunction_Return
+ *  SchM_Schedulable_WdgM_WdgM_MainFunction_Start
  *
  *********************************************************************************************************************/
 

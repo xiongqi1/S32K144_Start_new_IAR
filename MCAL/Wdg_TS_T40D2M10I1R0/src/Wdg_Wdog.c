@@ -439,6 +439,8 @@ FUNC(uint32, WDG_CODE) Wdg_Wdog_Init(P2CONST(Wdg_Wdog_ConfigType, AUTOMATIC, WDG
     /* @violates @ref Wdg_Wdog_c_REF_4 Violates MISRA 2004 Rule 11.1, Cast from unsigned long to pointer.*/
     /* @violates @ref Wdg_Wdog_c_REF_6 Violates MISRA 2004 Rule 11.3, Cast from unsigned long to pointer.*/
     REG_WRITE32(WDOG_CS_ADDR32(Wdg_Instance),(Wdog_pConfigPtr->Wdog_u32Config));
+    REG_BIT_SET32(WDOG_CS_ADDR32(Wdg_Instance),0x80);
+
     
     ResumeAllInterrupts();
     

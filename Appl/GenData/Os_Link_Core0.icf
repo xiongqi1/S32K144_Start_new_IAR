@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link_Core0.icf
- *   Generation Time: 2025-03-17 16:46:29
+ *   Generation Time: 2025-03-18 22:32:28
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -46,11 +46,10 @@ block OS_Adc_Adc12bsarv2_EndGroupConvUnit0_CODE_BLOCK with alignment = 32 { sect
 block OS_CanBusOffIsr_0_CODE_BLOCK with alignment = 32 { section .OS_CanBusOffIsr_0_CODE },
 block OS_CanMailboxIsr_0_CODE_BLOCK with alignment = 32 { section .OS_CanMailboxIsr_0_CODE },
 block OS_Default_Init_Task_CODE_BLOCK with alignment = 32 { section .OS_Default_Init_Task_CODE },
-block OS_FTM_0_CH_0_CH_1_ISR_CODE_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_ISR_CODE },
-block OS_LPIT_0_CH_0_ISR_CODE_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_ISR_CODE },
-block OS_LPTMR_0_CH_0_ISR_CODE_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_ISR_CODE },
+block OS_FTM_1_CH_0_CH_1_ISR_CODE_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_CH_1_ISR_CODE },
 block OS_OsTask_APP_CODE_BLOCK with alignment = 32 { section .OS_OsTask_APP_CODE },
 block OS_OsTask_BSW_SCHM_CODE_BLOCK with alignment = 32 { section .OS_OsTask_BSW_SCHM_CODE },
+block OS_Wdg_Wdog0_Isr_CODE_BLOCK with alignment = 32 { section .OS_Wdg_Wdog0_Isr_CODE },
 #endif
 
 #ifdef OS_LINK_INTVEC_CODE
@@ -510,57 +509,15 @@ block OS_CounterIsr_SystemTimer_CONST_FAST_BLOCK with alignment = 32 { section .
 
 
 
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_FAR )
-block OS_FTM_0_CH_0_CH_1_Isr_CONST_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_CONST },
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_FAR )
+block OS_FTM_1_CH_0_Isr_CONST_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_CONST },
 #endif
 
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_NEAR )
-block OS_FTM_0_CH_0_CH_1_Isr_CONST_FAST_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_CONST_FAST },
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_NEAR )
+block OS_FTM_1_CH_0_Isr_CONST_FAST_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_CONST_FAST },
 #endif
 
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_INIT )
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
-
-#ifdef OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR
-# undef OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR
-#endif
-
-#ifdef OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_FAR
-# undef OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_FAR
-#endif
-
-#ifdef OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_NEAR
-# undef OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_NEAR
-#endif
-
-#ifdef OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_INIT
-# undef OS_LINK_CONST_ISR_FTM_0_CH_0_CH_1_ISR_INIT
-#endif
-
-
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_FAR )
-block OS_LPIT_0_CH_0_Isr_CONST_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_CONST },
-#endif
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_NEAR )
-block OS_LPIT_0_CH_0_Isr_CONST_FAST_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_CONST_FAST },
-#endif
-
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_INIT )
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_INIT )
 
 
 
@@ -576,33 +533,33 @@ block OS_LPIT_0_CH_0_Isr_CONST_FAST_BLOCK with alignment = 32 { section .OS_LPIT
 
 #endif
 
-#ifdef OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR
-# undef OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR
+#ifdef OS_LINK_CONST_ISR_FTM_1_CH_0_ISR
+# undef OS_LINK_CONST_ISR_FTM_1_CH_0_ISR
 #endif
 
-#ifdef OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_FAR
-# undef OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_FAR
+#ifdef OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_FAR
+# undef OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_FAR
 #endif
 
-#ifdef OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_NEAR
-# undef OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_NEAR
+#ifdef OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_NEAR
+# undef OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_NEAR
 #endif
 
-#ifdef OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_INIT
-# undef OS_LINK_CONST_ISR_LPIT_0_CH_0_ISR_INIT
+#ifdef OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_INIT
+# undef OS_LINK_CONST_ISR_FTM_1_CH_0_ISR_INIT
 #endif
 
 
 
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_FAR )
-block OS_LPTMR_0_CH_0_Isr_CONST_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_CONST },
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_WDG_ISR ) || defined ( OS_LINK_CONST_ISR_WDG_ISR_FAR )
+block OS_Wdg_Isr_CONST_BLOCK with alignment = 32 { section .OS_Wdg_Isr_CONST },
 #endif
 
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_NEAR )
-block OS_LPTMR_0_CH_0_Isr_CONST_FAST_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_CONST_FAST },
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_WDG_ISR ) || defined ( OS_LINK_CONST_ISR_WDG_ISR_NEAR )
+block OS_Wdg_Isr_CONST_FAST_BLOCK with alignment = 32 { section .OS_Wdg_Isr_CONST_FAST },
 #endif
 
-#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_INIT )
+#if defined ( OS_LINK_CONST ) || defined ( OS_LINK_CONST_ISR ) || defined ( OS_LINK_CONST_ISR_WDG_ISR ) || defined ( OS_LINK_CONST_ISR_WDG_ISR_INIT )
 
 
 
@@ -618,20 +575,20 @@ block OS_LPTMR_0_CH_0_Isr_CONST_FAST_BLOCK with alignment = 32 { section .OS_LPT
 
 #endif
 
-#ifdef OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR
-# undef OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR
+#ifdef OS_LINK_CONST_ISR_WDG_ISR
+# undef OS_LINK_CONST_ISR_WDG_ISR
 #endif
 
-#ifdef OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_FAR
-# undef OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_FAR
+#ifdef OS_LINK_CONST_ISR_WDG_ISR_FAR
+# undef OS_LINK_CONST_ISR_WDG_ISR_FAR
 #endif
 
-#ifdef OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_NEAR
-# undef OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_NEAR
+#ifdef OS_LINK_CONST_ISR_WDG_ISR_NEAR
+# undef OS_LINK_CONST_ISR_WDG_ISR_NEAR
 #endif
 
-#ifdef OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_INIT
-# undef OS_LINK_CONST_ISR_LPTMR_0_CH_0_ISR_INIT
+#ifdef OS_LINK_CONST_ISR_WDG_ISR_INIT
+# undef OS_LINK_CONST_ISR_WDG_ISR_INIT
 #endif
 
 
@@ -2044,395 +2001,264 @@ block OS_CounterIsr_SystemTimer_VAR_FAST_NOCACHE_ZERO_INIT_BLOCK with alignment 
 
 
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_ALL_BLOCK with fixed order, alignment = 32 {
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR
+block OS_FTM_1_CH_0_Isr_VAR_ALL_BLOCK with fixed order, alignment = 32 {
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_INIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_INIT )
+block OS_FTM_1_CH_0_Isr_VAR_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_NOINIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_NOINIT_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_NOINIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_NOINIT )
+block OS_FTM_1_CH_0_Isr_VAR_NOINIT_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_NOINIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_ZERO_INIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_ZERO_INIT_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_ZERO_INIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_ZERO_INIT )
+block OS_FTM_1_CH_0_Isr_VAR_ZERO_INIT_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_ZERO_INIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_INIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_INIT )
+block OS_FTM_1_CH_0_Isr_VAR_FAST_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_FAST },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_NOINIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_NOINIT_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_NOINIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_NOINIT )
+block OS_FTM_1_CH_0_Isr_VAR_FAST_NOINIT_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_FAST_NOINIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_ZERO_INIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_ZERO_INIT_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_ZERO_INIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_ZERO_INIT )
+block OS_FTM_1_CH_0_Isr_VAR_FAST_ZERO_INIT_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_FAST_ZERO_INIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_INIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_NOCACHE_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_NOCACHE },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_INIT )
+block OS_FTM_1_CH_0_Isr_VAR_NOCACHE_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_NOCACHE },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_NOINIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_NOCACHE_NOINIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_NOINIT )
+block OS_FTM_1_CH_0_Isr_VAR_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_NOCACHE_NOINIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_ZERO_INIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_NOCACHE_ZERO_INIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_ZERO_INIT )
+block OS_FTM_1_CH_0_Isr_VAR_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_NOCACHE_ZERO_INIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_INIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_NOCACHE_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_NOCACHE },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_INIT )
+block OS_FTM_1_CH_0_Isr_VAR_FAST_NOCACHE_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_FAST_NOCACHE },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_NOINIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_NOCACHE_NOINIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_NOINIT )
+block OS_FTM_1_CH_0_Isr_VAR_FAST_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_FAST_NOCACHE_NOINIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_ZERO_INIT )
-block OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_FTM_0_CH_0_CH_1_Isr_VAR_FAST_NOCACHE_ZERO_INIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT )
+block OS_FTM_1_CH_0_Isr_VAR_FAST_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_FTM_1_CH_0_Isr_VAR_FAST_NOCACHE_ZERO_INIT },
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR
 },
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_INIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_NOINIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_NOINIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_CACHE_ZERO_INIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_CACHE_ZERO_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_INIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_NOINIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_NOINIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_FAR_NOCACHE_ZERO_INIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_FAR_NOCACHE_ZERO_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_INIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_NOINIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_NOINIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_CACHE_ZERO_INIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_CACHE_ZERO_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_INIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_NOINIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_NOINIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_FTM_0_CH_0_CH_1_ISR_NEAR_NOCACHE_ZERO_INIT
+#ifdef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_FTM_1_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT
 #endif
 
 
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR
-block OS_LPIT_0_CH_0_Isr_VAR_ALL_BLOCK with fixed order, alignment = 32 {
+#ifdef OS_LINK_VAR_ISR_WDG_ISR
+block OS_Wdg_Isr_VAR_ALL_BLOCK with fixed order, alignment = 32 {
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_INIT )
-block OS_LPIT_0_CH_0_Isr_VAR_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_INIT )
+block OS_Wdg_Isr_VAR_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_NOINIT )
-block OS_LPIT_0_CH_0_Isr_VAR_NOINIT_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_NOINIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_NOINIT )
+block OS_Wdg_Isr_VAR_NOINIT_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_NOINIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_ZERO_INIT )
-block OS_LPIT_0_CH_0_Isr_VAR_ZERO_INIT_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_ZERO_INIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_ZERO_INIT )
+block OS_Wdg_Isr_VAR_ZERO_INIT_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_ZERO_INIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_INIT )
-block OS_LPIT_0_CH_0_Isr_VAR_FAST_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_FAST },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_INIT )
+block OS_Wdg_Isr_VAR_FAST_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_FAST },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_NOINIT )
-block OS_LPIT_0_CH_0_Isr_VAR_FAST_NOINIT_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_FAST_NOINIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_NOINIT )
+block OS_Wdg_Isr_VAR_FAST_NOINIT_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_FAST_NOINIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_ZERO_INIT )
-block OS_LPIT_0_CH_0_Isr_VAR_FAST_ZERO_INIT_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_FAST_ZERO_INIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_ZERO_INIT )
+block OS_Wdg_Isr_VAR_FAST_ZERO_INIT_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_FAST_ZERO_INIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_INIT )
-block OS_LPIT_0_CH_0_Isr_VAR_NOCACHE_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_NOCACHE },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_INIT )
+block OS_Wdg_Isr_VAR_NOCACHE_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_NOCACHE },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_NOINIT )
-block OS_LPIT_0_CH_0_Isr_VAR_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_NOCACHE_NOINIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_NOINIT )
+block OS_Wdg_Isr_VAR_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_NOCACHE_NOINIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_ZERO_INIT )
-block OS_LPIT_0_CH_0_Isr_VAR_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_NOCACHE_ZERO_INIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_ZERO_INIT )
+block OS_Wdg_Isr_VAR_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_NOCACHE_ZERO_INIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_INIT )
-block OS_LPIT_0_CH_0_Isr_VAR_FAST_NOCACHE_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_FAST_NOCACHE },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_INIT )
+block OS_Wdg_Isr_VAR_FAST_NOCACHE_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_FAST_NOCACHE },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_NOINIT )
-block OS_LPIT_0_CH_0_Isr_VAR_FAST_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_FAST_NOCACHE_NOINIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_NOINIT )
+block OS_Wdg_Isr_VAR_FAST_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_FAST_NOCACHE_NOINIT },
 #endif
 
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT )
-block OS_LPIT_0_CH_0_Isr_VAR_FAST_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_LPIT_0_CH_0_Isr_VAR_FAST_NOCACHE_ZERO_INIT },
+#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_ZERO_INIT )
+block OS_Wdg_Isr_VAR_FAST_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_Wdg_Isr_VAR_FAST_NOCACHE_ZERO_INIT },
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR
+#ifdef OS_LINK_VAR_ISR_WDG_ISR
 },
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR
+# undef OS_LINK_VAR_ISR_WDG_ISR
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_INIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_NOINIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_NOINIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_CACHE_ZERO_INIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR_CACHE_ZERO_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_INIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_NOINIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_NOINIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_FAR_NOCACHE_ZERO_INIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_FAR_NOCACHE_ZERO_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_INIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_INIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_NOINIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_NOINIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_NOINIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_CACHE_ZERO_INIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR_CACHE_ZERO_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_INIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_INIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_INIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_NOINIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_NOINIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_NOINIT
 #endif
 
-#ifdef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_LPIT_0_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT
-#endif
-
-
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR
-block OS_LPTMR_0_CH_0_Isr_VAR_ALL_BLOCK with fixed order, alignment = 32 {
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_INIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_NOINIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_NOINIT_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_NOINIT },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_ZERO_INIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_ZERO_INIT_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_ZERO_INIT },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_INIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_FAST_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_FAST },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_NOINIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_FAST_NOINIT_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_FAST_NOINIT },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_ZERO_INIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_FAST_ZERO_INIT_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_FAST_ZERO_INIT },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_INIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_NOCACHE_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_NOCACHE },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_NOINIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_NOCACHE_NOINIT },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_ZERO_INIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_NOCACHE_ZERO_INIT },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_INIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_FAST_NOCACHE_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_FAST_NOCACHE },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_NOINIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_FAST_NOCACHE_NOINIT_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_FAST_NOCACHE_NOINIT },
-#endif
-
-#if defined ( OS_LINK_VAR ) || defined ( OS_LINK_VAR_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE ) || defined ( OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT )
-block OS_LPTMR_0_CH_0_Isr_VAR_FAST_NOCACHE_ZERO_INIT_BLOCK with alignment = 32 { section .OS_LPTMR_0_CH_0_Isr_VAR_FAST_NOCACHE_ZERO_INIT },
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR
-},
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_CACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_FAR_NOCACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_INIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_NOINIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_CACHE_ZERO_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_INIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_INIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_NOINIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_NOINIT
-#endif
-
-#ifdef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT
-# undef OS_LINK_VAR_ISR_LPTMR_0_CH_0_ISR_NEAR_NOCACHE_ZERO_INIT
+#ifdef OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_ZERO_INIT
+# undef OS_LINK_VAR_ISR_WDG_ISR_NEAR_NOCACHE_ZERO_INIT
 #endif
 
 

@@ -226,7 +226,7 @@ extern "C"{
 /**
 * @brief            The function Mcu_PerformReset is only available if the runtime parameter McuPerformResetApi is set to TRUE.
 */
-#define MCU_PERFORM_RESET_API   (STD_OFF)
+#define MCU_PERFORM_RESET_API   (STD_ON)
 
 
 /**

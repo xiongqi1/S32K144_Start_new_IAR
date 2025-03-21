@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Isr_Lcfg.h
- *   Generation Time: 2025-03-17 16:46:29
+ *   Generation Time: 2025-03-18 22:32:28
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -88,14 +88,11 @@ extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_CanIsr_0_MB16To31;
 /*! ISR configuration data: CounterIsr_SystemTimer */
 extern CONST(Os_TimerIsrConfigType, OS_CONST) OsCfg_Isr_CounterIsr_SystemTimer;
 
-/*! ISR configuration data: FTM_0_CH_0_CH_1_Isr */
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_FTM_0_CH_0_CH_1_Isr;
+/*! ISR configuration data: FTM_1_CH_0_Isr */
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_FTM_1_CH_0_Isr;
 
-/*! ISR configuration data: LPIT_0_CH_0_Isr */
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_LPIT_0_CH_0_Isr;
-
-/*! ISR configuration data: LPTMR_0_CH_0_Isr */
-extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_LPTMR_0_CH_0_Isr;
+/*! ISR configuration data: Wdg_Isr */
+extern CONST(Os_IsrConfigType, OS_CONST) OsCfg_Isr_Wdg_Isr;
 
 # define OS_STOP_SEC_CORE0_CONST_UNSPECIFIED
 # include "Os_MemMap_OsSections.h" /* PRQA S 5087 */ /* MD_MSR_19.1 */

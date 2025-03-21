@@ -1,0 +1,22 @@
+WdgM_StatusNotifications_Core0.pbi: \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\WdgM_StatusNotifications_Core0.c \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components\Rte_WdgM.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components/Rte_WdgM_Type.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Rte_Type.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/Rte.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common\Std_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common/Platform_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common/Compiler.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include\Compiler_Cfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Rte_Compiler_Cfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include/Cdd_Tp_Compiler_Cfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include/Cdd_Com_Compiler_Cfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Os_Compiler_Cfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/Rte_UserTypes.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common\ComStack_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\BSW\_Common/Std_Types.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\ComStack_Cfg.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData/Rte_DataHandleType.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Rte_DataHandleType.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\Include\MemMap.h \
+  F:\eletric_car\Prepare_of_development_environment\AUTOSAR_tools\AUTOSAR_TOOLs\S32K144_SIP\MICROSAR\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\GenData\Components/WdgM_MemMap.h

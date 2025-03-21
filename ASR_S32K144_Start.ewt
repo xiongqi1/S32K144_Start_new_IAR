@@ -2407,6 +2407,18 @@
                 <file>
                     <name>$PROJ_DIR$\Appl\GenData\src\Spi_PBcfg.c</name>
                 </file>
+                <file>
+                    <name>$PROJ_DIR$\Appl\GenData\src\Wdg_Cfg.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Appl\GenData\src\Wdg_CfgExt.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Appl\GenData\src\Wdg_Lcfg.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Appl\GenData\src\Wdg_PBcfg.c</name>
+                </file>
             </group>
             <file>
                 <name>$PROJ_DIR$\Appl\GenData\BswM_Lcfg.c</name>
@@ -2578,6 +2590,15 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\Appl\GenData\Rte_SystemApplication_OsCore0.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Appl\GenData\WdgIf_Lcfg.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Appl\GenData\WdgM_Cfg.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Appl\GenData\WdgM_StatusNotifications_Core0.c</name>
             </file>
         </group>
         <group>
@@ -3139,6 +3160,21 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\MCAL\Spi_TS_T40D2M10I1R0\src\Spi_LPspi_Irq.c</name>
+            </file>
+        </group>
+        <group>
+            <name>WDG</name>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Wdg_TS_T40D2M10I1R0\src\Wdg.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Wdg_TS_T40D2M10I1R0\src\Wdg_Channel.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Wdg_TS_T40D2M10I1R0\src\Wdg_Wdog.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\MCAL\Wdg_TS_T40D2M10I1R0\src\Wdg_Wdog_Isr.c</name>
             </file>
         </group>
     </group>

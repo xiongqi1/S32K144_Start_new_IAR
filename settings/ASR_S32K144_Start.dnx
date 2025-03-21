@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>1937049870</Checksum>
+        <Checksum>2612351528</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -133,6 +133,9 @@
         <DEFAULT_MACRO_PATH>_ "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\pemicro\P&amp;E"</DEFAULT_MACRO_PATH>
         <DEFAULT_LOGFILE_PATH>_ "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\pemicro\P&amp;E"</DEFAULT_LOGFILE_PATH>
     </PE_SETTINGS>
+    <struct_types>
+        <Fmt0>Wdg_Wdog_ConfigType-Wdog_u32Config	4	0</Fmt0>
+    </struct_types>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -158,8 +161,20 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\MCAL\Mcl_TS_T40D2M10I1R0\src\LPit_Common.c}.297.13" 0 0 1 "" 0 "" 0</Bp0>
-        <Count>1</Count>
+        <Bp0>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM_Checkpoint.c}.569.11" 0 0 1 "" 0 "" 0</Bp0>
+        <Bp1>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM.c}.3907.7" 0 0 1 "" 0 "" 0</Bp1>
+        <Bp2>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM.c}.1860.11" 0 0 1 "" 0 "" 0</Bp2>
+        <Bp3>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM.c}.1372.9" 0 0 1 "" 0 "" 0</Bp3>
+        <Bp4>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM_Checkpoint.c}.1143.7" 0 0 1 "" 0 "" 0</Bp4>
+        <Bp5>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM.c}.1417.15" 0 0 1 "" 0 "" 0</Bp5>
+        <Bp6>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM.c}.3736.9" 0 0 1 "" 0 "" 0</Bp6>
+        <Bp7>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM.c}.2170.5" 0 0 1 "" 0 "" 0</Bp7>
+        <Bp8>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM.c}.2165.5" 0 0 1 "" 0 "" 0</Bp8>
+        <Bp9>_ 0 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM.c}.2191.9" 0 0 1 "" 0 "" 0</Bp9>
+        <Bp10>_ 1 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM_Checkpoint.c}.526.7" 0 0 1 "" 0 "" 0</Bp10>
+        <Bp11>_ 1 "EMUL_CODE" "{$PROJ_DIR$\BSW\WdgM\WdgM_Checkpoint.c}.608.7" 0 0 1 "" 0 "" 0</Bp11>
+        <Bp12>_ 1 "EMUL_CODE" "{$PROJ_DIR$\MCAL\Wdg_TS_T40D2M10I1R0\src\Wdg_Wdog.c}.442.5" 0 0 1 "" 0 "" 0</Bp12>
+        <Count>13</Count>
     </Breakpoints2>
     <Aliases>
         <A0>_ "C:\Vector\CBD1800257_D01_S32K1xx\Applications\S32K144_Start_new_IAR\Appl\BrsAsrMain.c" ""</A0>

@@ -127,12 +127,12 @@ FUNC(void, CtLedTask_CODE) CtLedTask_InitRunnable(void) /* PRQA S 0850 */ /* MD_
 static uint16 Adc0AppBuffer[2];
   Adc_EnableGroupNotification(AdcGroup1);
 Adc_SetupResultBuffer(AdcGroup1,Adc0AppBuffer);
-Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration);
-Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration, 20000);
-Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration_LPtmr);
-Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration_LPtmr, 60000);
-Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration_FTM0_CH0_CH1);
-Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration_FTM0_CH0_CH1, 64000);
+//Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration);
+//Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration, 20000);
+//Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration_LPtmr);
+//Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration_LPtmr, 60000);
+//Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration_FTM0_CH0_CH1);
+//Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration_FTM0_CH0_CH1, 64000);
 Rte_Call_UR_CN_CAN00_06ecbb07_RequestComMode(COMM_FULL_COMMUNICATION);
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
@@ -173,9 +173,17 @@ LedCnt++;
 
 LedState ^= 0x01;
 
-
+WdgM_CheckpointReached(0,0);
 Adc_StartGroupConversion(AdcGroup1);
  Dio_WriteChannel(112,LedState);
+
+ if(Dio_ReadChannel(DioConf_DioChannel_DioChannel_PTB2)==STD_HIGH){
+   while(1);
+  Dio_WriteChannel(DioConf_DioChannel_DioChannel_PTD0,0);
+ }else{
+  Dio_WriteChannel(DioConf_DioChannel_DioChannel_PTD0,1);
+ }
+ WdgM_CheckpointReached(0,1);
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!

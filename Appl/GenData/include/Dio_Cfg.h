@@ -305,6 +305,49 @@ extern "C" {
 /** @violates @ref Dio_Cfg_H_REF_1 The used compilers use more than 31 chars for identifiers. */
 #define  DioConf_DioChannel_DioChannel_PTD15 ((uint16)0x006fU)
 
+/* ---------- DioPort_PTB ---------- */
+
+/**
+* @brief          Symbolic name for the port DioPort_PTB.
+*
+*/
+#define DioConf_DioPort_DioPort_PTB  ((uint8)0x01U)
+
+/**
+* @brief          Symbolic name for the channel DioChannel_PTB2.
+*
+*/
+
+
+/** @violates @ref Dio_Cfg_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define  DioConf_DioChannel_DioChannel_PTB2 ((uint16)0x0022U)
+
+/* ---------- DioPort_PTC ---------- */
+
+/**
+* @brief          Symbolic name for the port DioPort_PTC.
+*
+*/
+#define DioConf_DioPort_DioPort_PTC  ((uint8)0x02U)
+
+/**
+* @brief          Symbolic name for the channel DioChannel_PTC12.
+*
+*/
+
+
+/** @violates @ref Dio_Cfg_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define  DioConf_DioChannel_DioChannel_PTC12 ((uint16)0x004cU)
+
+/**
+* @brief          Symbolic name for the channel DioChannel_PTC13.
+*
+*/
+
+
+/** @violates @ref Dio_Cfg_H_REF_1 The used compilers use more than 31 chars for identifiers. */
+#define  DioConf_DioChannel_DioChannel_PTC13 ((uint16)0x004dU)
+
 
 /*=================================================================================================
 *                                             ENUMS

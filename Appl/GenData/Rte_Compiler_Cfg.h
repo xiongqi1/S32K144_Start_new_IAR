@@ -674,118 +674,59 @@
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
- * Symbol: RTE_TEST_SWC1_APPL
+ * Symbol: RTE_WDGM_APPL
  *********************************************************************************************************************/
 
 /* used for references on application variables */
-# define RTE_TEST_SWC1_APPL_VAR
+# define RTE_WDGM_APPL_VAR
 
 /* used for references on application data (constants or variables) */
-# define RTE_TEST_SWC1_APPL_DATA
+# define RTE_WDGM_APPL_DATA
 
 /* used for references on application functions */
-# define RTE_TEST_SWC1_APPL_CODE
+# define RTE_WDGM_APPL_CODE
 
 /* used for references on application constants */
-# define RTE_TEST_SWC1_APPL_CONST
+# define RTE_WDGM_APPL_CONST
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_SWC1_CODE
+ * Symbol: WdgM_CODE
  *********************************************************************************************************************/
 
 /* used for SWC specific code */
-# define Test_SWC1_CODE
+# define WdgM_CODE
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_SWC1_CONST
+ * Symbol: WdgM_CONST
  *********************************************************************************************************************/
 
 /* used for global or static SWC specific constants */
-# define Test_SWC1_CONST
+# define WdgM_CONST
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
  *********************************************************************************************************************/
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_SWC1_VAR
+ * Symbol: WdgM_VAR
  *********************************************************************************************************************/
 
 /* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
-# define Test_SWC1_VAR_NOINIT
+# define WdgM_VAR_NOINIT
 
 /* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
-# define Test_SWC1_VAR_INIT
+# define WdgM_VAR_INIT
 
 /* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
-# define Test_SWC1_VAR_ZERO_INIT
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
- * Symbol: RTE_TEST_SWC2_APPL
- *********************************************************************************************************************/
-
-/* used for references on application variables */
-# define RTE_TEST_SWC2_APPL_VAR
-
-/* used for references on application data (constants or variables) */
-# define RTE_TEST_SWC2_APPL_DATA
-
-/* used for references on application functions */
-# define RTE_TEST_SWC2_APPL_CODE
-
-/* used for references on application constants */
-# define RTE_TEST_SWC2_APPL_CONST
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_SWC2_CODE
- *********************************************************************************************************************/
-
-/* used for SWC specific code */
-# define Test_SWC2_CODE
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_SWC2_CONST
- *********************************************************************************************************************/
-
-/* used for global or static SWC specific constants */
-# define Test_SWC2_CONST
-
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
- *********************************************************************************************************************/
-/**********************************************************************************************************************
- * DO NOT CHANGE THIS COMMENT!     << Start of compiler abstraction implementation >>       DO NOT CHANGE THIS COMMENT!
- * Symbol: Test_SWC2_VAR
- *********************************************************************************************************************/
-
-/* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
-# define Test_SWC2_VAR_NOINIT
-
-/* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
-# define Test_SWC2_VAR_INIT
-
-/* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
-# define Test_SWC2_VAR_ZERO_INIT
+# define WdgM_VAR_ZERO_INIT
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!      << End of compiler abstraction implementation >>        DO NOT CHANGE THIS COMMENT!
@@ -845,6 +786,109 @@
 
 /* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
 # define OsAppTask_VAR_ZERO_INIT
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+
+#if 0
+/***  Start of saved code (symbol: compiler abstraction implementation:Test_SWC2_VAR)  **********************/
+
+/* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
+# define Test_SWC2_VAR_NOINIT
+
+/* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
+# define Test_SWC2_VAR_INIT
+
+/* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
+# define Test_SWC2_VAR_ZERO_INIT
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: compiler abstraction implementation:Test_SWC1_CODE)  *********************/
+
+/* used for SWC specific code */
+# define Test_SWC1_CODE
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: compiler abstraction implementation:Test_SWC2_CODE)  *********************/
+
+/* used for SWC specific code */
+# define Test_SWC2_CODE
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: compiler abstraction implementation:Test_SWC1_VAR)  **********************/
+
+/* used for all global or static SWC specific variables that are not initialized by the startup code of the compiler */
+# define Test_SWC1_VAR_NOINIT
+
+/* used for global or static SWC specific variables that are initialized by the startup code of the compiler */
+# define Test_SWC1_VAR_INIT
+
+/* used for global or static SWC specific variables that are initialized with zero by the startup code of the compiler */
+# define Test_SWC1_VAR_ZERO_INIT
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: compiler abstraction implementation:RTE_TEST_SWC1_APPL)  *****************/
+
+/* used for references on application variables */
+# define RTE_TEST_SWC1_APPL_VAR
+
+/* used for references on application data (constants or variables) */
+# define RTE_TEST_SWC1_APPL_DATA
+
+/* used for references on application functions */
+# define RTE_TEST_SWC1_APPL_CODE
+
+/* used for references on application constants */
+# define RTE_TEST_SWC1_APPL_CONST
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: compiler abstraction implementation:RTE_TEST_SWC2_APPL)  *****************/
+
+/* used for references on application variables */
+# define RTE_TEST_SWC2_APPL_VAR
+
+/* used for references on application data (constants or variables) */
+# define RTE_TEST_SWC2_APPL_DATA
+
+/* used for references on application functions */
+# define RTE_TEST_SWC2_APPL_CODE
+
+/* used for references on application constants */
+# define RTE_TEST_SWC2_APPL_CONST
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: compiler abstraction implementation:Test_SWC2_CONST)  ********************/
+
+/* used for global or static SWC specific constants */
+# define Test_SWC2_CONST
+
+/***  End of saved code  ************************************************************************************/
+#endif
+
+#if 0
+/***  Start of saved code (symbol: compiler abstraction implementation:Test_SWC1_CONST)  ********************/
+
+/* used for global or static SWC specific constants */
+# define Test_SWC1_CONST
 
 /***  End of saved code  ************************************************************************************/
 #endif
