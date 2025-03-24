@@ -854,6 +854,26 @@
             "Source",
             "..",
             "../Components",
+            "../Components/CPUload"
+         ],
+         "SourceFile" : "Source/CPUload.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/eletric_car/Prepare_of_development_environment/AUTOSAR_tools/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_CPUload"
+         ],
+         "SourceFile" : "Source/TSC_CPUload.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/eletric_car/Prepare_of_development_environment/AUTOSAR_tools/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
             "../Components/TSC_Dcm"
          ],
          "SourceFile" : "Source/TSC_Dcm.c"
@@ -914,9 +934,49 @@
             "Source",
             "..",
             "../Components",
+            "../Components/DLK"
+         ],
+         "SourceFile" : "Source/DLK.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/eletric_car/Prepare_of_development_environment/AUTOSAR_tools/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_DLK"
+         ],
+         "SourceFile" : "Source/TSC_DLK.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/eletric_car/Prepare_of_development_environment/AUTOSAR_tools/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
             "../Components/TSC_EcuM"
          ],
          "SourceFile" : "Source/TSC_EcuM.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/eletric_car/Prepare_of_development_environment/AUTOSAR_tools/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/EMC"
+         ],
+         "SourceFile" : "Source/EMC.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/eletric_car/Prepare_of_development_environment/AUTOSAR_tools/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_EMC"
+         ],
+         "SourceFile" : "Source/TSC_EMC.c"
       },
       {
          "IncludeDirectoryList" : [
@@ -937,6 +997,26 @@
             "../Components/TSC_Os_OsCore0_swc"
          ],
          "SourceFile" : "Source/TSC_Os_OsCore0_swc.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/eletric_car/Prepare_of_development_environment/AUTOSAR_tools/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/PWL"
+         ],
+         "SourceFile" : "Source/PWL.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "F:/eletric_car/Prepare_of_development_environment/AUTOSAR_tools/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_PWL"
+         ],
+         "SourceFile" : "Source/TSC_PWL.c"
       }
    ],
    "TaskList" : [
@@ -963,6 +1043,24 @@
          "Preemptive" : "0",
          "Priority" : "10",
          "TaskName" : "OsTask_BSW_SCHM"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "1",
+         "Priority" : "25",
+         "TaskName" : "OsTask_CPUload"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "1",
+         "Priority" : "22",
+         "TaskName" : "OsTask_DLK"
+      },
+      {
+         "OsApplication" : "",
+         "Preemptive" : "1",
+         "Priority" : "20",
+         "TaskName" : "OsTask_EMC_PWL"
       }
    ],
    "TemplateDataBaseDirectory" : "F:\\eletric_car\\Prepare_of_development_environment\\AUTOSAR_tools\\AUTOSAR_TOOLs\\S32K144_SIP\\MICROSAR\\CBD1800257_D01_S32K1xx\\Generators\\Rte"

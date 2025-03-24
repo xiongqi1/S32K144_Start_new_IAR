@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Hal_Context_Lcfg.h
- *   Generation Time: 2025-03-13 21:11:35
+ *   Generation Time: 2025-03-23 00:09:58
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -105,6 +105,18 @@ extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_APP_Dyn;
 extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_BSW_SCHM_Dyn;
 
 
+/*! HAL dynamic task context data: OsTask_CPUload */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_CPUload_Dyn;
+
+
+/*! HAL dynamic task context data: OsTask_DLK */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_DLK_Dyn;
+
+
+/*! HAL dynamic task context data: OsTask_EMC_PWL */
+extern VAR(Os_Hal_ContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsTask_EMC_PWL_Dyn;
+
+
 /*! HAL exception context data: OsCore0 */
 extern VAR(Os_ExceptionContextType, OS_VAR_NOINIT) OsCfg_Hal_Context_OsCore0_ExceptionContext;
 
@@ -151,6 +163,15 @@ extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_APP;
 
 /*! HAL task context configuration data: OsTask_BSW_SCHM */
 extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_BSW_SCHM;
+
+/*! HAL task context configuration data: OsTask_CPUload */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_CPUload;
+
+/*! HAL task context configuration data: OsTask_DLK */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_DLK;
+
+/*! HAL task context configuration data: OsTask_EMC_PWL */
+extern CONST(Os_Hal_ContextConfigType, OS_CONST) OsCfg_Hal_Context_OsTask_EMC_PWL;
 
 /*! HAL kernel stack configuration data: OsCore0_Kernel */
 extern CONST(Os_Hal_ContextStackConfigType, OS_CONST) OsCfg_Hal_Stack_OsCore0_Kernel;

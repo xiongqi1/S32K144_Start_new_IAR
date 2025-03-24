@@ -36,6 +36,7 @@
  *********************************************************************************************************************/
 
 #include "Os.h"
+#include "Os_Counter_Lcfg.h"
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_Include>
@@ -152,6 +153,7 @@ FUNC(ProtectionReturnType, OS_PROTECTIONHOOK_CODE) ProtectionHook(StatusType Fat
 #endif /* OS_CFG_PROTECTIONHOOK_SYSTEM */
 
 
+uint32 currentTick=0,tickCount=0;
 /**********************************************************************************************************************
  *  PreTaskHook()
  *********************************************************************************************************************/
@@ -164,6 +166,14 @@ FUNC(void, OS_PRETASKHOOK_CODE) PreTaskHook(void)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PreTaskHook>
  *********************************************************************************************************************/
+
+TaskType TaskID;
+if(GetTaskID(&TaskID) == E_OK){
+  if(TaskID == IdleTask_OsCore0){
+    currentTick = Os_CounterGetValue(OsCfg_CounterRefs[0]);
+  }
+}
+
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>
@@ -188,6 +198,13 @@ FUNC(void, OS_POSTTASKHOOK_CODE) PostTaskHook(void)
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           <USERBLOCK OS_Callout_Stubs_PostTaskHook>
  *********************************************************************************************************************/
+TaskType TaskID;
+if(GetTaskID(&TaskID) == E_OK){
+  if(TaskID == IdleTask_OsCore0){
+    tickCount += (uint32)Os_CounterSub(OsCfg_CounterRefs[0],Os_CounterGetValue(OsCfg_CounterRefs[0]), currentTick);
+  }
+}
+
 
 /**********************************************************************************************************************
  * DO NOT CHANGE THIS COMMENT!           </USERBLOCK>

@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Application_Cfg.h
- *   Generation Time: 2025-03-13 21:11:34
+ *   Generation Time: 2025-03-23 00:09:58
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -44,14 +44,24 @@
  *  GLOBAL CONSTANT MACROS
  *********************************************************************************************************************/
 
+/* Number of application objects: OsApplication_CPUload */
+# define OS_CFG_NUM_APP_OSAPPLICATION_CPULOAD_ALARMS             (1uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_CPULOAD_COUNTERS           (0uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_CPULOAD_HOOKS              (0uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_CPULOAD_ISRS               (0uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_CPULOAD_CAT1ISRS           (0uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_CPULOAD_SCHTS              (0uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_CPULOAD_TASKS              (1uL)
+# define OS_CFG_NUM_APP_OSAPPLICATION_CPULOAD_SERVICES           (0uL)
+
 /* Number of application objects: SystemApplication_OsCore0 */
-# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS             (5uL)
+# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ALARMS             (8uL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_COUNTERS           (1uL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_HOOKS              (0uL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_ISRS               (5uL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_CAT1ISRS           (0uL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SCHTS              (0uL)
-# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_TASKS              (4uL)
+# define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_TASKS              (6uL)
 # define OS_CFG_NUM_APP_SYSTEMAPPLICATION_OSCORE0_SERVICES           (0uL)
 
 

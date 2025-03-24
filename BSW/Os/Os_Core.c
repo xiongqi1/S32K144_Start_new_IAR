@@ -1318,12 +1318,14 @@ Os_CoreGetTrue, (void))
  *
  *
  */
+uint32 Os_Idle_counter=0;
 OS_FUNC_ATTRIBUTE_DEFINITION(OS_LOCAL_INLINE void, OS_CODE, OS_ALWAYS_INLINE,
 Os_CoreIdle, (void))
 {
   /* #10 Call HAL Idle in an endless loop. */
   while(Os_CoreGetTrue() == TRUE)                                                                                       /* COV_OS_COREIDLELOOP */
   {
+    Os_Idle_counter++;
     Os_Hal_CoreIdle();
   }
 }

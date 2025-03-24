@@ -62,6 +62,8 @@
  *  Rte_ReadHook_BswM_Request_ESH_RunRequest_1_requestedMode_Start
  *  Rte_Runnable_BswM_BswM_MainFunction_Return
  *  Rte_Runnable_BswM_BswM_MainFunction_Start
+ *  Rte_Runnable_CPUload_CPUload_Runnable_1s_Return
+ *  Rte_Runnable_CPUload_CPUload_Runnable_1s_Start
  *  Rte_Runnable_CddSbc_Sbc_Test_Runnable_Return
  *  Rte_Runnable_CddSbc_Sbc_Test_Runnable_Start
  *  Rte_Runnable_ComM_ComM_MainFunction_0_Return
@@ -92,6 +94,8 @@
  *  Rte_Runnable_CtLedTask_CtLedTask_InitRunnable_Start
  *  Rte_Runnable_CtLedTask_LedRunnable_Return
  *  Rte_Runnable_CtLedTask_LedRunnable_Start
+ *  Rte_Runnable_DLK_DLK_Runnable_100ms_Return
+ *  Rte_Runnable_DLK_DLK_Runnable_100ms_Start
  *  Rte_Runnable_Dcm_Dcm_MainFunction_Return
  *  Rte_Runnable_Dcm_Dcm_MainFunction_Start
  *  Rte_Runnable_Dcm_GetActiveProtocol_Return
@@ -180,6 +184,8 @@
  *  Rte_Runnable_Det_ReportError_Start
  *  Rte_Runnable_Det_ReportRuntimeError_Return
  *  Rte_Runnable_Det_ReportRuntimeError_Start
+ *  Rte_Runnable_EMC_EMC_Runnable_10ms_Return
+ *  Rte_Runnable_EMC_EMC_Runnable_10ms_Start
  *  Rte_Runnable_EcuM_EcuM_MainFunction_Return
  *  Rte_Runnable_EcuM_EcuM_MainFunction_Start
  *  Rte_Runnable_EcuM_GetBootTarget_Return
@@ -200,6 +206,8 @@
  *  Rte_Runnable_Os_OsCore0_swc_GetCounterValue_Start
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Return
  *  Rte_Runnable_Os_OsCore0_swc_GetElapsedValue_Start
+ *  Rte_Runnable_PWL_PWL_Runnable_20ms_Return
+ *  Rte_Runnable_PWL_PWL_Runnable_20ms_Start
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Return
  *  Rte_SwitchAckHook_Dcm_DcmEcuReset_DcmEcuReset_Start
  *  Rte_SwitchHook_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode_Return

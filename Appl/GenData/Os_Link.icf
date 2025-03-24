@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Link.icf
- *   Generation Time: 2021-06-21 14:32:34
+ *   Generation Time: 2025-03-23 10:23:24
  *           Project: S32K144_Start - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -45,6 +45,8 @@ block OS_INTVEC_CODE_BLOCK with alignment = 128 { section .OS_INTVEC_CODE },
 block OS_ERRORHOOK_CODE_BLOCK with alignment = 32 { section .OS_ERRORHOOK_CODE },
 block OS_OS_COREINITHOOK_CODE_BLOCK with alignment = 32 { section .OS_OS_COREINITHOOK_CODE },
 block OS_PANICHOOK_CODE_BLOCK with alignment = 32 { section .OS_PANICHOOK_CODE },
+block OS_POSTTASKHOOK_CODE_BLOCK with alignment = 32 { section .OS_POSTTASKHOOK_CODE },
+block OS_PRETASKHOOK_CODE_BLOCK with alignment = 32 { section .OS_PRETASKHOOK_CODE },
 #endif
 
 #ifdef OS_LINK_CODE
